@@ -38,9 +38,25 @@ the reviewed AI vertical slices.
 
 - ~~Build a custom graph UI with visual styling for different relation types. Native
   Obsidian Graph View support is complete.~~
-- Run a daily nanobot sync that presents detected changes for approval before
-  implementation; automatic application remains disabled.
+- ~~Run a daily nanobot sync that presents detected changes for approval before
+  implementation.~~ Implemented 2026-09-08: cron job `llm-wiki-daily-check` runs
+  daily at 09:00 CST, calls `scripts/daily_check.sh`, and reports the Yuque sync
+  plan for approval. Automatic content application remains disabled; only
+  approved changes are applied interactively.
 - Add embeddings or a graph database.
+
+## Git backup
+
+- This folder is a private GitHub repo: `github.com/shakewingo/llm-wiki` (default
+  branch `main`). Initialized 2026-09-08.
+- The daily cron job commits and pushes any local changes (e.g. approved wiki
+  updates applied earlier) after each check. No automatic content changes are
+  made by the cron job itself — it only syncs already-approved, already-applied
+  local commits to the remote.
+- Push authentication uses a scoped credential helper at
+  `scripts/git-credential-helper.sh`, which reads the GitHub token from the
+  `gh` CLI's local config (`~/.config/gh/hosts.yml`) at push time. The token is
+  never stored in this repo or printed to logs.
 
 ## Maintenance
 
