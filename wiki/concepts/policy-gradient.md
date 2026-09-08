@@ -8,7 +8,7 @@ level: intermediate
 relations:
   prerequisites: [reinforcement-learning]
   enables: [proximal-policy-optimization, rlhf]
-sources: [yuque:168068842, yuque:222857934]
+sources: [yuque:168068842, yuque:222857934, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Policy Gradient
@@ -26,6 +26,7 @@ sparse sequence-level rewards make credit assignment difficult.
 
 - [RLHF](https://www.yuque.com/shakewin/woezs0/ldm61haxvifpi7bb)
 - [CS7641 ML](https://www.yuque.com/shakewin/fidaqi/evbvouf8opoc9aix)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

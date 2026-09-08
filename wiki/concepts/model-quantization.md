@@ -8,7 +8,7 @@ level: intermediate
 relations:
   affects: [kv-cache, mixed-precision-training]
   contrasts_with: [mixed-precision-training]
-sources: [yuque:245719568, yuque:253935769]
+sources: [yuque:245719568, yuque:253935769, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Model Quantization
@@ -26,6 +26,7 @@ efficient kernels and conversion overhead does not dominate.
 
 - [Knowledge Puzzle](https://www.yuque.com/shakewin/woezs0/fvhczuilmmhpf6t4)
 - [NVIDIA Agentic AI Training](https://www.yuque.com/shakewin/fidaqi/fgv15n9m42qh9m77)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

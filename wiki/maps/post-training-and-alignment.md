@@ -20,7 +20,7 @@ entry_points:
   - model-quantization
 relations:
   prerequisites: [foundations, transformer-architecture]
-sources: [yuque:168068842, yuque:249024774, yuque:241299652, yuque:245719568, yuque:253935769, yuque:247276544]
+sources: [yuque:168068842, yuque:249024774, yuque:241299652, yuque:245719568, yuque:253935769, yuque:247276544, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Post-Training and Alignment Map

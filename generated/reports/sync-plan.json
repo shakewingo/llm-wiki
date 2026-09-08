@@ -1,0 +1,15 @@
+{
+  "planned_at": "2026-09-08T13:20:11.652846+00:00",
+  "provider": "yuque",
+  "changes": [],
+  "change_count": 0,
+  "preserved_external_sources": [
+    {
+      "source_id": "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+      "provider": "notion",
+      "title": "Alisa’s book of LLMs",
+      "content_updated_at": "2026-09-04T09:44:25.303Z",
+      "last_ingested_version": "2026-09-04T09:44:25.303Z"
+    }
+  ]
+}

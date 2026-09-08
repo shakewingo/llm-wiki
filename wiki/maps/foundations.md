@@ -6,6 +6,10 @@ domains: [foundations]
 aliases: []
 level: mixed
 entry_points:
+  - neural-network-computation
+  - backpropagation-and-autodiff
+  - deep-learning-optimization
+  - numerical-stability
   - probabilistic-objectives
   - ml-generalization-and-regularization
   - classical-ml-methods
@@ -16,7 +20,7 @@ entry_points:
   - temporal-difference-learning
 relations:
   enables: [pretraining, causal-structure-learning]
-sources: [yuque:203899196, yuque:222857934, yuque:222458626, yuque:127456364, yuque:245719568]
+sources: [yuque:203899196, yuque:222857934, yuque:222458626, yuque:127456364, yuque:245719568, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # AI and ML Foundations Map
@@ -25,13 +29,17 @@ This slice connects the assumptions beneath modern AI systems.
 
 ## Learning path
 
-1. Learn objectives with [probabilistic objectives](../concepts/probabilistic-objectives.md)
+1. Ground the computation in [neural-network layers](../concepts/neural-network-computation.md),
+   [backpropagation](../concepts/backpropagation-and-autodiff.md), and
+   [deep-learning optimization](../concepts/deep-learning-optimization.md).
+2. Learn objectives with [probabilistic objectives](../concepts/probabilistic-objectives.md),
+   then connect the math to [numerical stability](../concepts/numerical-stability.md)
    and why validation needs [generalization and regularization](../concepts/ml-generalization-and-regularization.md).
-2. Review [classical ML](../concepts/classical-ml-methods.md) and
+3. Review [classical ML](../concepts/classical-ml-methods.md) and
    [sparse representations](../concepts/sparse-representations.md) as practical baselines.
-3. Understand symbolic planning through [search and A*](../concepts/search-and-a-star.md)
+4. Understand symbolic planning through [search and A*](../concepts/search-and-a-star.md)
    and uncertainty through [Bayesian networks](../concepts/bayesian-networks.md).
-4. Move to sequential decisions with [reinforcement learning](../concepts/reinforcement-learning.md)
+5. Move to sequential decisions with [reinforcement learning](../concepts/reinforcement-learning.md)
    and [temporal-difference learning](../concepts/temporal-difference-learning.md).
 
 The recurring question is: what assumptions make a method work? Independence,

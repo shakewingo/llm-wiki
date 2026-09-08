@@ -10,6 +10,8 @@ entry_points:
   - kv-cache
   - prompt-caching
   - speculative-decoding
+  - continuous-batching-and-sequence-packing
+  - flash-attention
 relations:
   prerequisites: [transformer-architecture]
 sources:
@@ -21,6 +23,7 @@ sources:
   - yuque:267998961
   - yuque:283802487
   - yuque:241299652
+  - notion:388cad4f-b605-8074-8c53-ff558a15beb0
 ---
 
 # Transformer Inference Map
@@ -48,7 +51,10 @@ skipped, and how the work is placed across hardware.
    [speculative decoding](../concepts/speculative-decoding.md),
    [multi-token prediction](../concepts/multi-token-prediction.md), and
    [dynamic sparse attention](../concepts/dynamic-sparse-attention.md).
-6. Finish with placement: [tensor parallelism](../concepts/tensor-parallelism.md),
+6. Connect kernels and scheduling through
+   [FlashAttention](../concepts/flash-attention.md) and
+   [continuous batching](../concepts/continuous-batching-and-sequence-packing.md).
+7. Finish with placement: [tensor parallelism](../concepts/tensor-parallelism.md),
    [mixture of experts](../concepts/mixture-of-experts.md), and
    [expert parallelism](../concepts/expert-parallelism.md).
 
@@ -61,6 +67,8 @@ skipped, and how the work is placed across hardware.
 | Reuse shared prefixes | Lower prefill time and cost | Key correctness, privacy, eviction |
 | Draft and verify | Parallelize several token checks | Low acceptance can erase gains |
 | Select sparse history | Avoid full-context attention | Retrieval misses become quality errors |
+| Tile exact attention | Avoid quadratic HBM intermediates | Kernel and hardware constraints |
+| Continuously refill batches | Improve serving utilization | Scheduler and latency complexity |
 | Shard computation | Fit and serve larger models | Communication and topology bottlenecks |
 
 The common systems thread is arithmetic intensity. Modern accelerators can multiply

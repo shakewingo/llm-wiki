@@ -1,8 +1,75 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T10:26:27.648631+00:00",
+  "generated_at": "2026-09-08T13:30:21.799449+00:00",
   "scope_review": "provisional",
   "sources": [
+    {
+      "source_id": "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+      "provider": "notion",
+      "knowledge_base": "collection://c9ccad4f-b605-83a6-8b25-07248ba4f85d",
+      "knowledge_base_name": "Docs",
+      "slug": "alisa-s-book-of-llms",
+      "title": "Alisa’s book of LLMs",
+      "url": "https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0",
+      "content_updated_at": "2026-09-04T09:44:00.000Z",
+      "latest_version_id": "2026-09-04T09:44:00.000Z",
+      "last_ingested_version": "2026-09-04T09:44:00.000Z",
+      "last_ingested_at": "2026-09-08T13:30:21.799424+00:00",
+      "scope": "reference",
+      "scope_reason": "Reviewed comprehensive LLM reference; used to fill verified gaps and reinforce existing concepts.",
+      "concepts": [
+        "alignment-methods",
+        "applied-ai-and-evaluation",
+        "backpropagation-and-autodiff",
+        "context-parallelism",
+        "continuous-batching-and-sequence-packing",
+        "data-parallelism",
+        "decoding-sampling-strategies",
+        "deep-learning-optimization",
+        "direct-preference-optimization",
+        "distributed-collectives",
+        "distributed-systems-drills",
+        "distributed-training-and-mlops",
+        "expert-parallelism",
+        "flash-attention",
+        "foundations",
+        "foundations-drills",
+        "fully-sharded-data-parallelism",
+        "gpu-performance-model",
+        "group-relative-policy-optimization",
+        "kv-cache",
+        "llm-compute-and-memory-accounting",
+        "mixed-precision-training",
+        "model-architecture-and-generation",
+        "model-architecture-drills",
+        "model-quantization",
+        "multimodal-ai-systems",
+        "neural-network-computation",
+        "numerical-stability",
+        "pipeline-parallelism",
+        "policy-gradient",
+        "post-training-and-alignment",
+        "probabilistic-objectives",
+        "proximal-policy-optimization",
+        "recurrent-neural-network",
+        "rlhf",
+        "rms-normalization",
+        "rotary-position-embedding",
+        "self-attention",
+        "sequence-model-families",
+        "speculative-decoding",
+        "state-space-model",
+        "swiglu-feed-forward-network",
+        "tensor-parallelism",
+        "transformer-architecture",
+        "transformer-inference",
+        "transformer-inference-drills"
+      ],
+      "public": false,
+      "status": "live",
+      "word_count": 22764,
+      "api_version": "2026-03-11"
+    },
     {
       "source_id": "yuque:127049298",
       "provider": "yuque",
@@ -43,8 +110,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 1172,
-      "last_ingested_at": "2026-09-08T10:26:27.648582+00:00"
+      "word_count": 1172
     },
     {
       "source_id": "yuque:127457059",
@@ -104,8 +170,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 238,
-      "last_ingested_at": "2026-09-08T10:26:27.648588+00:00"
+      "word_count": 238
     },
     {
       "source_id": "yuque:145103815",
@@ -128,8 +193,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 399,
-      "last_ingested_at": "2026-09-08T10:26:27.648585+00:00"
+      "word_count": 399
     },
     {
       "source_id": "yuque:145103888",
@@ -170,8 +234,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 151,
-      "last_ingested_at": "2026-09-08T10:26:27.648550+00:00"
+      "word_count": 151
     },
     {
       "source_id": "yuque:145104021",
@@ -218,7 +281,9 @@
         "grouped-query-attention",
         "kv-cache",
         "multi-query-attention",
+        "rms-normalization",
         "rotary-position-embedding",
+        "swiglu-feed-forward-network",
         "transformer-architecture",
         "transformer-inference",
         "transformer-inference-drills"
@@ -249,8 +314,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 343,
-      "last_ingested_at": "2026-09-08T10:26:27.648557+00:00"
+      "word_count": 343
     },
     {
       "source_id": "yuque:146454643",
@@ -292,8 +356,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 199,
-      "last_ingested_at": "2026-09-08T10:26:27.648579+00:00"
+      "word_count": 199
     },
     {
       "source_id": "yuque:168068842",
@@ -324,8 +387,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 843,
-      "last_ingested_at": "2026-09-08T10:26:27.648575+00:00"
+      "word_count": 843
     },
     {
       "source_id": "yuque:168103787",
@@ -387,8 +449,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 2576,
-      "last_ingested_at": "2026-09-08T10:26:27.648554+00:00"
+      "word_count": 2576
     },
     {
       "source_id": "yuque:181662265",
@@ -430,8 +491,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 196,
-      "last_ingested_at": "2026-09-08T10:26:27.648545+00:00"
+      "word_count": 196
     },
     {
       "source_id": "yuque:203899196",
@@ -454,8 +514,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 521,
-      "last_ingested_at": "2026-09-08T10:26:27.648527+00:00"
+      "word_count": 521
     },
     {
       "source_id": "yuque:204005901",
@@ -480,8 +539,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 745,
-      "last_ingested_at": "2026-09-08T10:26:27.648572+00:00"
+      "word_count": 745
     },
     {
       "source_id": "yuque:213041038",
@@ -506,8 +564,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 7839,
-      "last_ingested_at": "2026-09-08T10:26:27.648617+00:00"
+      "word_count": 7839
     },
     {
       "source_id": "yuque:215078932",
@@ -577,17 +634,20 @@
       "scope": "reference",
       "scope_reason": "Useful context or curriculum; provisional pending user review.",
       "concepts": [
+        "backpropagation-and-autodiff",
         "bert",
+        "deep-learning-optimization",
         "encoder-decoder",
         "foundations",
         "masked-language-modeling",
         "ml-generalization-and-regularization",
+        "neural-network-computation",
+        "recurrent-neural-network",
         "residual-network"
       ],
       "public": false,
       "status": 1,
-      "word_count": 4635,
-      "last_ingested_at": "2026-09-08T10:26:27.648541+00:00"
+      "word_count": 4635
     },
     {
       "source_id": "yuque:222857934",
@@ -615,8 +675,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 3441,
-      "last_ingested_at": "2026-09-08T10:26:27.648532+00:00"
+      "word_count": 3441
     },
     {
       "source_id": "yuque:224766388",
@@ -636,8 +695,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 460,
-      "last_ingested_at": "2026-09-08T10:26:27.648499+00:00"
+      "word_count": 460
     },
     {
       "source_id": "yuque:230859031",
@@ -657,8 +715,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 182,
-      "last_ingested_at": "2026-09-08T10:26:27.648598+00:00"
+      "word_count": 182
     },
     {
       "source_id": "yuque:235162689",
@@ -739,8 +796,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 2392,
-      "last_ingested_at": "2026-09-08T10:26:27.648615+00:00"
+      "word_count": 2392
     },
     {
       "source_id": "yuque:241299652",
@@ -832,6 +888,7 @@
       "concepts": [
         "alignment-methods",
         "decoding-sampling-strategies",
+        "deep-learning-optimization",
         "distributed-systems-drills",
         "distributed-training-and-mlops",
         "foundations",
@@ -842,14 +899,14 @@
         "mixed-precision-training",
         "ml-generalization-and-regularization",
         "model-quantization",
+        "numerical-stability",
         "post-training-and-alignment",
         "post-training-drills",
         "probabilistic-objectives"
       ],
       "public": false,
       "status": 1,
-      "word_count": 2158,
-      "last_ingested_at": "2026-09-08T10:26:27.648568+00:00"
+      "word_count": 2158
     },
     {
       "source_id": "yuque:245761150",
@@ -925,8 +982,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 1057,
-      "last_ingested_at": "2026-09-08T10:26:27.648606+00:00"
+      "word_count": 1057
     },
     {
       "source_id": "yuque:248775912",
@@ -968,8 +1024,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 277,
-      "last_ingested_at": "2026-09-08T10:26:27.648561+00:00"
+      "word_count": 277
     },
     {
       "source_id": "yuque:249254635",
@@ -1144,8 +1199,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 193,
-      "last_ingested_at": "2026-09-08T10:26:27.648537+00:00"
+      "word_count": 193
     },
     {
       "source_id": "yuque:260283661",
@@ -1169,8 +1223,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 165,
-      "last_ingested_at": "2026-09-08T10:26:27.648591+00:00"
+      "word_count": 165
     },
     {
       "source_id": "yuque:260446359",
@@ -1192,8 +1245,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 424,
-      "last_ingested_at": "2026-09-08T10:26:27.648564+00:00"
+      "word_count": 424
     },
     {
       "source_id": "yuque:261725390",
@@ -1218,8 +1270,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 2279,
-      "last_ingested_at": "2026-09-08T10:26:27.648612+00:00"
+      "word_count": 2279
     },
     {
       "source_id": "yuque:263799689",
@@ -1246,8 +1297,7 @@
       ],
       "public": true,
       "status": 1,
-      "word_count": 3021,
-      "last_ingested_at": "2026-09-08T10:26:27.648608+00:00"
+      "word_count": 3021
     },
     {
       "source_id": "yuque:267998961",
@@ -1401,8 +1451,7 @@
       ],
       "public": false,
       "status": 1,
-      "word_count": 3267,
-      "last_ingested_at": "2026-09-08T10:26:27.648602+00:00"
+      "word_count": 3267
     },
     {
       "source_id": "yuque:279560483",
@@ -1436,6 +1485,7 @@
       "scope": "core",
       "scope_reason": "Direct AI/LLM concept material; provisional pending user review.",
       "concepts": [
+        "continuous-batching-and-sequence-packing",
         "kv-cache",
         "paged-attention",
         "prompt-caching",
@@ -1479,11 +1529,15 @@
       "scope": "reference",
       "scope_reason": "Useful context or curriculum; provisional pending user review.",
       "concepts": [
+        "context-parallelism",
         "data-parallelism",
+        "distributed-collectives",
         "distributed-systems-drills",
         "distributed-training-and-mlops",
         "expert-parallelism",
         "fully-sharded-data-parallelism",
+        "gpu-performance-model",
+        "llm-compute-and-memory-accounting",
         "mixed-precision-training",
         "mixture-of-experts",
         "pipeline-parallelism",

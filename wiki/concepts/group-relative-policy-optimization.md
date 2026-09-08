@@ -8,7 +8,7 @@ level: advanced
 relations:
   prerequisites: [policy-gradient, reward-modeling]
   contrasts_with: [proximal-policy-optimization, rlhf, direct-preference-optimization]
-sources: [yuque:241299652, yuque:245719568]
+sources: [yuque:241299652, yuque:245719568, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 legacy_notion_id: 965cad4f-b605-8220-bb2e-81cb441e982f
 ---
 
@@ -27,6 +27,7 @@ incorrectly. GRPO reduces model count, not the cost of generating multiple rollo
 
 - [DeepSeek Paper Reading](https://www.yuque.com/shakewin/woezs0/agn9y7w2skcvzzrk)
 - [Knowledge Puzzle](https://www.yuque.com/shakewin/woezs0/fvhczuilmmhpf6t4)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

@@ -9,7 +9,7 @@ relations:
   prerequisites: [policy-gradient, generalized-advantage-estimation, reward-modeling]
   used_by: [rlhf]
   contrasts_with: [direct-preference-optimization, group-relative-policy-optimization]
-sources: [yuque:168068842, yuque:241299652]
+sources: [yuque:168068842, yuque:241299652, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Proximal Policy Optimization
@@ -31,6 +31,7 @@ heavy because rollout, reward, value, and reference models must remain coordinat
 
 - [RLHF](https://www.yuque.com/shakewin/woezs0/ldm61haxvifpi7bb)
 - [DeepSeek Paper Reading](https://www.yuque.com/shakewin/woezs0/agn9y7w2skcvzzrk)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

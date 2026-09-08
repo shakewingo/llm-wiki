@@ -14,6 +14,7 @@ sources:
   - yuque:279560513
   - yuque:267998961
   - yuque:283802487
+  - notion:388cad4f-b605-8074-8c53-ff558a15beb0
 ---
 
 # Transformer Inference Drills
@@ -73,6 +74,18 @@ Tensor and expert parallelism add collectives or all-to-all traffic. On weak lin
 communication, synchronization, and routing imbalance outweigh extra compute and
 reduced memory. Follow-ups: [tensor parallelism](../concepts/tensor-parallelism.md)
 and [expert parallelism](../concepts/expert-parallelism.md).
+
+## 9. Why is FlashAttention exact despite using tiles?
+
+Online softmax tracks a running maximum, denominator, and weighted-value sum,
+rescaling old partial results when the maximum changes. This avoids materializing
+the full attention matrix without approximating its result.
+
+## 10. Continuous batching versus sequence packing?
+
+Continuous batching replaces completed serving requests between decoding steps.
+Sequence packing concatenates examples under a token budget and relies on masks and
+positions to preserve independence; it is commonly a training/fine-tuning technique.
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

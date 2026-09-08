@@ -7,7 +7,7 @@ aliases: [maximum likelihood estimation, MLE, KL divergence]
 level: foundational
 relations:
   enables: [variational-autoencoder, reward-modeling]
-sources: [yuque:245719568, yuque:222857934]
+sources: [yuque:245719568, yuque:222857934, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Probabilistic Objectives
@@ -28,6 +28,7 @@ multiple modes or concentrate on one.
 
 - [Knowledge Puzzle](https://www.yuque.com/shakewin/woezs0/fvhczuilmmhpf6t4)
 - [CS7641 ML](https://www.yuque.com/shakewin/fidaqi/evbvouf8opoc9aix)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

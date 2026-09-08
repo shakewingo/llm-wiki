@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Metadata-only Yuque inventory, change planning, and version acknowledgement."""
+"""Yuque sync workflow that preserves registered sources from other providers."""
 
 from __future__ import annotations
 
@@ -195,7 +195,14 @@ def bootstrap(mark_pilot: bool) -> dict[str, Any]:
             for item in json.loads(REGISTRY.read_text()).get("sources", [])
         }
     concepts = source_concepts()
-    records = []
+    records = [
+        {
+            **item,
+            "concepts": concepts.get(item["source_id"], []),
+        }
+        for item in previous.values()
+        if item.get("provider") != "yuque"
+    ]
     for doc in fetch_details(list_documents()):
         source_id = f"yuque:{doc['id']}"
         old = previous.get(source_id, {})
@@ -236,7 +243,22 @@ def bootstrap(mark_pilot: bool) -> dict[str, Any]:
 
 def plan(write_report: bool) -> dict[str, Any]:
     registry = json.loads(REGISTRY.read_text())
-    old_by_id = {item["source_id"]: item for item in registry["sources"]}
+    old_by_id = {
+        item["source_id"]: item
+        for item in registry["sources"]
+        if item.get("provider", "yuque") == "yuque"
+    }
+    external_sources = [
+        {
+            "source_id": item["source_id"],
+            "provider": item.get("provider"),
+            "title": item.get("title"),
+            "content_updated_at": item.get("content_updated_at"),
+            "last_ingested_version": item.get("last_ingested_version"),
+        }
+        for item in registry["sources"]
+        if item.get("provider", "yuque") != "yuque"
+    ]
     live = list_documents()
     included = {"core", "project-evidence", "reference"}
     detailed = fetch_details(
@@ -287,7 +309,13 @@ def plan(write_report: bool) -> dict[str, Any]:
                     "affected_pages": old.get("concepts", []),
                 }
             )
-    result = {"planned_at": now(), "changes": changes, "change_count": len(changes)}
+    result = {
+        "planned_at": now(),
+        "provider": "yuque",
+        "changes": changes,
+        "change_count": len(changes),
+        "preserved_external_sources": external_sources,
+    }
     if write_report:
         REPORT.parent.mkdir(parents=True, exist_ok=True)
         REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
@@ -302,6 +330,16 @@ def acknowledge(source_ids: list[str]) -> None:
     registry = json.loads(REGISTRY.read_text())
     records = {item["source_id"]: item for item in registry["sources"]}
     wanted = [records[source_id] for source_id in source_ids]
+    unsupported = [
+        item["source_id"]
+        for item in wanted
+        if item.get("provider", "yuque") != "yuque"
+    ]
+    if unsupported:
+        raise RuntimeError(
+            "acknowledge fetches Yuque versions only; use the provider sync script for "
+            f"external sources: {', '.join(unsupported)}"
+        )
     docs = [
         {
             "namespace": item["knowledge_base"],

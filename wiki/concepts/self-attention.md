@@ -8,7 +8,8 @@ level: foundational
 relations:
   part_of: [transformer-architecture]
   enables: [causal-attention]
-sources: [yuque:145104021]
+  optimized_by: [flash-attention]
+sources: [yuque:145104021, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Self-Attention
@@ -35,11 +36,13 @@ but dense attention scales quadratically with sequence length.”
 ## Source
 
 - [Attention is All You Need](https://www.yuque.com/shakewin/woezs0/wfnf4pb8yxth3i36)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships
 
 - Part of: [[transformer-architecture|Transformer Architecture]]
 - Enables: [[causal-attention|Causal Attention]]
+- Optimized by: [[flash-attention|FlashAttention]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->

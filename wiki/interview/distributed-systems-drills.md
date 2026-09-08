@@ -7,7 +7,7 @@ aliases: []
 level: mixed
 relations:
   prerequisites: [distributed-training-and-mlops]
-sources: [yuque:283802487, yuque:253935769, yuque:245719568]
+sources: [yuque:283802487, yuque:253935769, yuque:245719568, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Distributed Training and MLOps Drills
@@ -37,6 +37,21 @@ often for inference.
 
 Single CPU/GPU baselines, each parallel dimension, representative combinations,
 loss parity, memory, throughput, utilization, checkpoint recovery, and multi-node runs.
+
+## All-gather versus reduce-scatter?
+
+All-gather assembles shards into a replicated value. Reduce-scatter sums replicated
+partial values and leaves each rank a shard; they are reverse-mode counterparts.
+
+## What does arithmetic intensity tell you?
+
+It is useful FLOPs per byte moved. Comparing it with the accelerator's
+compute-to-bandwidth ratio predicts whether a kernel is compute- or bandwidth-bound.
+
+## When does context parallelism help?
+
+When long-sequence activations or attention state exceed one device. It shards the
+sequence and exchanges K/V blocks, trading per-device memory for communication.
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

@@ -18,6 +18,7 @@ drills.
 
 - [MHA, MQA, GQA, and MLA](wiki/comparisons/attention-cache-strategies.md)
 - [RLHF, DPO, and GRPO](wiki/comparisons/alignment-methods.md)
+- [RNNs, Transformers, and state space models](wiki/comparisons/sequence-model-families.md)
 
 ## Interview practice
 
@@ -31,9 +32,13 @@ drills.
 
 ## Concept library
 
-The 75 concept pages are linked from their domain maps. The generated machine-readable
+The 89 concept pages are linked from their domain maps. The generated machine-readable
 view contains all pages and typed relationships: [graph.json](generated/graph.json).
 
 For native Obsidian visualization, open this `llm-wiki` directory as a vault and
 select Graph View. Generated wikilinks expose every typed frontmatter relationship
 without changing which representation is canonical.
+
+## Source integration reports
+
+- [Alisa’s book of LLMs integration review](generated/reports/notion-alisa-migration.md)

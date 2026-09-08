@@ -7,7 +7,7 @@ aliases: []
 level: intermediate
 relations:
   prerequisites: [supervised-fine-tuning, reward-modeling, policy-gradient]
-sources: [yuque:168068842, yuque:249024774, yuque:241299652, yuque:245719568]
+sources: [yuque:168068842, yuque:249024774, yuque:241299652, yuque:245719568, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 legacy_notion_id: 33dcad4f-b605-8310-9dc8-01108f3d93c7
 ---
 
@@ -23,6 +23,10 @@ The choice is not “old versus new.” Use PPO when online reward composition a
 exploration justify complexity, DPO when a strong offline preference dataset exists,
 and GRPO when multiple verifiable samples per prompt provide a useful relative
 baseline. All three need drift control and independent evaluation.
+
+## Sources
+
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

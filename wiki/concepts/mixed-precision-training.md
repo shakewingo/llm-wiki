@@ -8,7 +8,7 @@ level: intermediate
 relations:
   prerequisites: [ml-generalization-and-regularization]
   contrasts_with: [model-quantization]
-sources: [yuque:245719568, yuque:283802487]
+sources: [yuque:245719568, yuque:283802487, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Mixed-Precision Training
@@ -26,6 +26,7 @@ served model. Numeric overflow, underflow, and reduction error require monitorin
 
 - [Knowledge Puzzle](https://www.yuque.com/shakewin/woezs0/fvhczuilmmhpf6t4)
 - [Distributed Framework](https://www.yuque.com/shakewin/sysgq3/mhw00hcggbv1scr8)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

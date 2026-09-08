@@ -29,6 +29,12 @@ ALLOWED_RELATIONS = {
     "optimized_by",
     "implemented_in",
 }
+SOURCE_ID_PATTERNS = {
+    "yuque": re.compile(r"^yuque:\d+$"),
+    "notion": re.compile(
+        r"^notion:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    ),
+}
 RELATION_LABELS = {
     "prerequisites": "Prerequisites",
     "part_of": "Part of",
@@ -82,6 +88,13 @@ def load_source_ids() -> set[str]:
         return set()
     registry = json.loads(path.read_text())
     return {item["source_id"] for item in registry.get("sources", [])}
+
+
+def load_source_records() -> list[dict[str, Any]]:
+    path = ROOT / "sources" / "registry.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text()).get("sources", [])
 
 
 def render_obsidian_block(
@@ -150,6 +163,7 @@ def build_graph() -> dict[str, Any]:
                 "type": page.get("type", "unknown"),
                 "domains": page.get("domains", []),
                 "aliases": page.get("aliases", []),
+                "sources": page.get("sources", []),
                 "path": str(page["_path"].relative_to(ROOT)),
             }
         )
@@ -159,7 +173,7 @@ def build_graph() -> dict[str, Any]:
                 edges.append({"source": page_id, "target": target, "type": relation})
     nodes.sort(key=lambda node: node["id"])
     edges.sort(key=lambda edge: (edge["source"], edge["type"], edge["target"]))
-    graph = {"schema_version": 1, "nodes": nodes, "edges": edges}
+    graph = {"schema_version": 2, "nodes": nodes, "edges": edges}
     atomic_json(GRAPH_PATH, graph)
     return graph
 
@@ -190,6 +204,24 @@ def lint() -> dict[str, Any]:
     by_id: dict[str, dict[str, Any]] = {}
     aliases: dict[str, list[str]] = defaultdict(list)
     source_ids = load_source_ids()
+    source_records = load_source_records()
+
+    seen_source_ids: set[str] = set()
+    for source in source_records:
+        source_id = source.get("source_id")
+        provider = source.get("provider")
+        if source_id in seen_source_ids:
+            errors.append(f"sources/registry.json: duplicate source {source_id}")
+        seen_source_ids.add(source_id)
+        pattern = SOURCE_ID_PATTERNS.get(provider)
+        if pattern is None:
+            errors.append(
+                f"sources/registry.json: unsupported provider {provider!r} for {source_id}"
+            )
+        elif not isinstance(source_id, str) or not pattern.fullmatch(source_id):
+            errors.append(
+                f"sources/registry.json: invalid {provider} source id {source_id!r}"
+            )
 
     for page in pages:
         path = page["_path"].relative_to(ROOT)

@@ -8,7 +8,7 @@ level: advanced
 relations:
   prerequisites: [data-parallelism]
   contrasts_with: [tensor-parallelism]
-sources: [yuque:283802487]
+sources: [yuque:283802487, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Fully Sharded Data Parallelism
@@ -24,6 +24,7 @@ state over time; tensor parallelism splits the computation inside each layer.
 ## Source
 
 - [Distributed Framework](https://www.yuque.com/shakewin/sysgq3/mhw00hcggbv1scr8)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

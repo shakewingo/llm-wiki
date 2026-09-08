@@ -8,7 +8,7 @@ level: advanced
 relations:
   prerequisites: [transformer-architecture]
   affects: [manifold-constrained-hyper-connections]
-sources: [yuque:283802487, yuque:260283661]
+sources: [yuque:283802487, yuque:260283661, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Pipeline Parallelism
@@ -26,6 +26,7 @@ overlap transfers with computation.
 
 - [Distributed Framework](https://www.yuque.com/shakewin/sysgq3/mhw00hcggbv1scr8)
 - [mHC](https://www.yuque.com/shakewin/woezs0/qcd8g69ec9wrft2a)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

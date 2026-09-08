@@ -3,8 +3,8 @@
 ## Goal and ownership
 
 The wiki is a compounding AI-domain knowledge system for big-picture navigation,
-technical review, and interview practice. Yuque owns complete notes; the local
-registry owns source metadata; Markdown owns synthesized knowledge and typed
+technical review, and interview practice. Yuque and registered Notion pages own
+complete source content; the local registry owns source metadata; Markdown owns synthesized knowledge and typed
 relationships; generated files provide graph and health-check views.
 
 ## Evidence from the legacy Notion graph
@@ -37,16 +37,22 @@ llm-wiki/
 
 Concept IDs are stable lowercase kebab-case. Relations use only:
 `prerequisites`, `part_of`, `enables`, `used_by`, `contrasts_with`, `affects`,
-`optimized_by`, and `implemented_in`. `contrasts_with` is symmetric. Source IDs
-have the form `yuque:<document-id>` and must exist in the registry.
+`optimized_by`, and `implemented_in`. `contrasts_with` is symmetric. Source IDs use
+a provider prefix: `yuque:<document-id>` or `notion:<page-uuid>`, and every ID must
+exist in the registry.
 
 ## Incremental sync transaction
 
-`sync_yuque.py plan` compares provider metadata with the registry and reports new,
-changed, renamed, or inaccessible sources plus affected pages. An LLM maintainer
-then fetches accepted bodies into temporary storage, updates derived pages, and
-runs graph generation and lint. `acknowledge` advances processed versions only
-after those checks pass and records the operation in `log.md`.
+`sync_yuque.py plan` compares Yuque metadata with the registry and reports new,
+changed, renamed, or inaccessible sources plus affected pages while preserving and
+listing other registered providers. `sync_notion.py plan` performs the equivalent
+freshness check against explicitly registered Notion pages through the official API.
+Its `export` command uses Notion's page-Markdown endpoint and follows any reported
+unknown subtrees into guarded temporary storage for approved processing. An LLM
+maintainer then updates derived pages and runs graph generation and lint. Each
+provider's `acknowledge` command advances
+processed versions only after those checks pass and records the operation in
+`log.md`.
 
 This keeps reruns idempotent and prevents partial failures from claiming a source
 version was processed. The approval boundary is deliberate: a sync preview may
@@ -62,3 +68,11 @@ page. Frontmatter remains canonical, and lint rejects a missing or stale project
 A custom graph UI with styled relation types, a daily nanobot sync that asks for
 approval, embeddings, and a graph database remain postponed. None is required to
 browse or maintain the Markdown knowledge graph.
+
+## Provider credentials
+
+Credentials are injected through `YUQUE_API_KEY` and `NOTION_API_KEY` in the agent
+or scheduler process environment and are never stored in the repository. Notion
+requests pin API version `2026-03-11`. The integration must have read-content
+capability and the registered page must be shared with it. See
+`sources/README.md` for exact commands and temporary-export rules.

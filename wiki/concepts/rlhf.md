@@ -8,7 +8,7 @@ level: intermediate
 relations:
   prerequisites: [supervised-fine-tuning, reward-modeling, proximal-policy-optimization]
   contrasts_with: [direct-preference-optimization, group-relative-policy-optimization]
-sources: [yuque:168068842, yuque:241299652]
+sources: [yuque:168068842, yuque:241299652, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Reinforcement Learning from Human Feedback
@@ -27,6 +27,7 @@ alongside human quality.
 
 - [RLHF](https://www.yuque.com/shakewin/woezs0/ldm61haxvifpi7bb)
 - [DeepSeek Paper Reading](https://www.yuque.com/shakewin/woezs0/agn9y7w2skcvzzrk)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

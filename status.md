@@ -4,27 +4,35 @@ Last verified: 2026-09-08, Asia/Shanghai.
 
 ## Complete
 
-- Migrated the reviewed AI-related Yuque material into seven connected vertical
+- Migrated the reviewed AI-related Yuque material and the registered Notion source
+  `Alisa’s book of LLMs` into seven connected vertical
   slices: foundations; model architecture and generation; Transformer inference;
   post-training and alignment; retrieval and agent systems; applied AI and
   evaluation; and distributed training and MLOps.
-- Built 75 derived concept pages, seven domain maps, two comparison pages, and
+- Built 89 derived concept pages, seven domain maps, three comparison pages, and
   seven interview drill sets.
-- Generated a deterministic knowledge graph with 91 nodes and 246 typed edges.
-- Refreshed the 68-document metadata registry and marked all 34 sources used by
-  wiki concepts as processed at their current Yuque versions.
-- Reviewed source scopes now total 20 `core`, 7 `project-evidence`, 9 `reference`,
+- Generated a deterministic knowledge graph with 106 nodes and 307 typed edges;
+  graph nodes now carry source IDs for provenance-aware consumers.
+- Refreshed the 69-source metadata registry: 68 Yuque documents plus one Notion
+  page. All 35 sources used by wiki pages are recorded at their reviewed versions.
+- Reviewed source scopes now total 20 `core`, 7 `project-evidence`, 10 `reference`,
   25 `excluded`, and 7 `unreviewed`.
-- Kept Yuque as the canonical store for full notes. No Yuque note body is persisted
-  anywhere under this wiki.
+- Kept source systems as the canonical stores for complete content. No complete
+  Yuque or Notion body is persisted anywhere under this wiki.
 - Preserved the legacy Notion inventory as migration evidence without treating its
   reciprocal, untyped relations as directional concept edges.
 - Added native Obsidian Graph View compatibility by projecting typed relations into
-  generated wikilink blocks on all 91 pages. Generation is deterministic,
+  generated wikilink blocks on all 106 pages. Generation is deterministic,
   idempotent, and checked by lint.
-- Verified graph generation and linting with zero errors and zero warnings, Ruff
-  with no findings, all six automated tests passing, and a live sync preview with
-  zero pending changes.
+- Verified direct Notion API access from `NOTION_API_KEY` against the exact Alisa
+  page: page metadata, block children, and page-Markdown endpoints returned HTTP
+  200. The full content arrived in one untruncated Markdown part with zero unknown
+  blocks.
+- Added `sync_notion.py` for metadata previews, fast Notion-flavored Markdown
+  exports to guarded temporary storage, and post-validation version
+  acknowledgement. The routine workflow no longer depends on a Notion connector.
+- Final verification: 106 nodes, 307 edges, zero lint errors or warnings, Ruff
+  clean, all 13 automated tests passing, and zero pending Notion changes.
 
 ## Scope boundary
 
@@ -40,8 +48,9 @@ the reviewed AI vertical slices.
   Obsidian Graph View support is complete.~~
 - ~~Run a daily nanobot sync that presents detected changes for approval before
   implementation.~~ Implemented 2026-09-08: cron job `llm-wiki-daily-check` runs
-  daily at 09:00 CST, calls `scripts/daily_check.sh`, and reports the Yuque sync
-  plan for approval. Automatic content application remains disabled; only
+  daily at 09:00 CST, calls `scripts/daily_check.sh`, and reports both Yuque and
+  Notion sync plans for approval. The scheduler must expose both API keys in its
+  process environment. Automatic content application remains disabled; only
   approved changes are applied interactively.
 - Add embeddings or a graph database.
 
@@ -60,7 +69,8 @@ the reviewed AI vertical slices.
 
 ## Maintenance
 
-Run `python scripts/sync_yuque.py plan` for a metadata-only change preview. For an
-approved change, fetch only the selected source bodies into temporary storage,
-update derived pages, regenerate Obsidian links and the JSON graph, lint, then
-acknowledge the processed source versions.
+Run `python scripts/sync_yuque.py plan` and `python scripts/sync_notion.py plan` for
+metadata-only change previews. For an approved change, fetch only the selected
+source bodies into temporary storage, update derived pages, regenerate Obsidian
+links and the JSON graph, lint, then acknowledge with the matching provider script.
+Exact Notion setup and commands are documented in `sources/README.md`.

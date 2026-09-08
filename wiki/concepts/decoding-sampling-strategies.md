@@ -8,7 +8,7 @@ level: foundational
 relations:
   prerequisites: [causal-attention]
   affects: [llm-evaluation]
-sources: [yuque:145901413, yuque:245719568]
+sources: [yuque:145901413, yuque:245719568, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Decoding and Sampling Strategies
@@ -27,6 +27,7 @@ under different decoding policies confounds model quality with search behavior.
 
 - [LLaMA](https://www.yuque.com/shakewin/woezs0/avr5nrkaahavwdwv)
 - [Knowledge Puzzle](https://www.yuque.com/shakewin/woezs0/fvhczuilmmhpf6t4)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

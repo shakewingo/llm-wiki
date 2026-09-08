@@ -18,7 +18,7 @@ entry_points:
   - responsible-synthetic-personas
 relations:
   prerequisites: [foundations]
-sources: [yuque:127456364, yuque:145103815, yuque:145103757, yuque:179434725, yuque:241262981, yuque:181670371, yuque:213041038]
+sources: [yuque:127456364, yuque:145103815, yuque:145103757, yuque:179434725, yuque:241262981, yuque:181670371, yuque:213041038, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Applied AI and Evaluation Map

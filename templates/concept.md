@@ -10,6 +10,7 @@ status: stub
 relations: {}
 sources:
   - yuque:123456
+  # Or: notion:12345678-1234-1234-1234-123456789abc
 ---
 
 # Human-readable title
@@ -30,4 +31,4 @@ sources:
 
 ## Sources
 
-- [Complete Yuque note](https://www.yuque.com/...)
+- [Complete source](https://...)

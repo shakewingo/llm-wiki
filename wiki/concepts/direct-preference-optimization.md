@@ -8,7 +8,7 @@ level: intermediate
 relations:
   prerequisites: [supervised-fine-tuning, probabilistic-objectives]
   contrasts_with: [reward-modeling, proximal-policy-optimization, rlhf, group-relative-policy-optimization]
-sources: [yuque:249024774, yuque:168068842]
+sources: [yuque:249024774, yuque:168068842, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Direct Preference Optimization
@@ -26,6 +26,7 @@ reference choice, and sensitivity to the temperature-like $\beta$ parameter.
 
 - [DPO](https://www.yuque.com/shakewin/woezs0/gway2i9nrspb9o7k)
 - [RLHF](https://www.yuque.com/shakewin/woezs0/ldm61haxvifpi7bb)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

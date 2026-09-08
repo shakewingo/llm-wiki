@@ -8,8 +8,8 @@ level: foundational
 relations:
   prerequisites: [self-attention]
   enables: [causal-attention, kv-cache]
-  contrasts_with: [graph-neural-network]
-sources: [yuque:145104021, yuque:145901413]
+  contrasts_with: [graph-neural-network, recurrent-neural-network, state-space-model]
+sources: [yuque:145104021, yuque:145901413, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 legacy_notion_id: fa3cad4f-b605-83e7-9109-81c407243233
 ---
 
@@ -51,12 +51,13 @@ caching essential.”
 
 - [Attention is All You Need](https://www.yuque.com/shakewin/woezs0/wfnf4pb8yxth3i36)
 - [LLaMA](https://www.yuque.com/shakewin/woezs0/avr5nrkaahavwdwv)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships
 
 - Prerequisites: [[self-attention|Self-Attention]]
 - Enables: [[causal-attention|Causal Attention]], [[kv-cache|KV Cache]]
-- Contrasts with: [[graph-neural-network|Graph Neural Networks]]
+- Contrasts with: [[graph-neural-network|Graph Neural Networks]], [[recurrent-neural-network|Recurrent Neural Networks]], [[state-space-model|State Space Models]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->

@@ -2,27 +2,34 @@
 
 ## Ownership and safety
 
-- Yuque is the source of truth for complete personal notes. Never copy a complete
-  Yuque body into this directory.
-- Keep credentials outside the wiki. Read `YUQUE_API_KEY` from the environment;
-  never print, log, or persist it.
+- Yuque and explicitly registered Notion pages are source material for derived
+  knowledge. Never copy a complete source body into this directory.
+- Keep credentials outside the wiki. Read `YUQUE_API_KEY` and `NOTION_API_KEY`
+  from the environment; never print, log, or persist either value.
 - Notion is migration evidence for the old graph, not a second canonical graph.
 - Markdown frontmatter is canonical. `generated/graph.json`, lint reports, and the
   Markdown sections between `BEGIN/END GENERATED OBSIDIAN LINKS` markers are
   derived and must not be edited by hand.
 - Source access does not imply inclusion. Preserve `unreviewed` until a source has
   an intentional scope decision.
+- `sync_yuque.py` owns Yuque freshness checks and preserves registry records from
+  other providers. `sync_notion.py` owns direct Notion API freshness checks,
+  temporary exports, and acknowledgements. Do not use a connector as the routine
+  sync path.
 
 ## Ingest workflow
 
-1. Run `python scripts/sync_yuque.py plan`.
+1. Run `python scripts/sync_yuque.py plan` and
+   `python scripts/sync_notion.py plan`.
 2. Review new/changed sources and the affected pages shown in the plan.
-3. Fetch only accepted, in-scope source bodies into temporary storage.
+3. Fetch only accepted, in-scope source bodies into temporary processing storage.
+   For registered Notion pages, use `sync_notion.py export` with an output under a
+   temporary directory; see `sources/README.md`.
 4. Update synthesis pages, maps, comparisons, drills, and provenance. Do not paste
    the source body.
 5. Regenerate Obsidian links, then run graph generation and lint.
-6. Only after all three validation commands pass, acknowledge processed versions with
-   `python scripts/sync_yuque.py acknowledge --source-id yuque:<id> ...`.
+6. Only after all three validation commands pass, acknowledge processed versions
+   with the matching provider script's `acknowledge` command.
 
 Concept merges, deletions, contradictions, broad scope changes, and high-impact
 relationship changes require user review. Never delete knowledge merely because a

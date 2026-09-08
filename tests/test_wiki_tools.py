@@ -17,6 +17,7 @@ class WikiToolsTest(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertGreaterEqual(len(first["nodes"]), 20)
         self.assertGreater(len(first["edges"]), 0)
+        self.assertIn("sources", first["nodes"][0])
 
     def test_lint_passes(self):
         report = wiki_tools.lint()
@@ -50,7 +51,7 @@ class WikiToolsTest(unittest.TestCase):
             wiki.mkdir(parents=True)
             (root / "sources").mkdir()
             (root / "sources" / "registry.json").write_text(
-                '{"sources": [{"source_id": "yuque:1"}]}'
+                '{"sources": [{"source_id": "yuque:1", "provider": "yuque"}]}'
             )
             (wiki / "first.md").write_text(
                 "---\nid: first\ntitle: First\ntype: concept\n"
@@ -90,6 +91,12 @@ class SyncPlanTest(unittest.TestCase):
             self.record(1, "Same", "2026-01-01"),
             self.record(2, "Old title", "2026-01-01"),
             self.record(3, "Deleted", "2026-01-01"),
+            {
+                "source_id": "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+                "provider": "notion",
+                "title": "External source",
+                "scope": "reference",
+            },
         ]
         live = [
             self.document(1, "Same", "2026-01-01"),
@@ -119,6 +126,9 @@ class SyncPlanTest(unittest.TestCase):
         )
         self.assertEqual(changes["yuque:3"], "inaccessible-or-deleted")
         self.assertEqual(changes["yuque:4"], "new")
+        self.assertFalse(
+            any(item["source_id"].startswith("notion:") for item in result["changes"])
+        )
 
     def test_partial_bootstrap_failure_preserves_registry(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -134,10 +144,59 @@ class SyncPlanTest(unittest.TestCase):
                     sync_yuque.bootstrap(False)
             self.assertEqual(registry.read_text(), original)
 
+    def test_bootstrap_preserves_non_yuque_sources(self):
+        external = {
+            "source_id": "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+            "provider": "notion",
+            "title": "Alisa’s book of LLMs",
+            "concepts": ["old-mapping"],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            registry = Path(directory) / "registry.json"
+            registry.write_text(__import__("json").dumps({"sources": [external]}))
+            with (
+                patch.object(sync_yuque, "REGISTRY", registry),
+                patch.object(sync_yuque, "list_documents", return_value=[]),
+                patch.object(sync_yuque, "fetch_details", return_value=[]),
+                patch.object(
+                    sync_yuque,
+                    "source_concepts",
+                    return_value={external["source_id"]: ["new-mapping"]},
+                ),
+            ):
+                result = sync_yuque.bootstrap(False)
+            self.assertEqual(len(result["sources"]), 1)
+            self.assertEqual(result["sources"][0]["concepts"], ["new-mapping"])
+
+    def test_acknowledge_rejects_non_yuque_source(self):
+        source_id = "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+        with tempfile.TemporaryDirectory() as directory:
+            registry = Path(directory) / "registry.json"
+            registry.write_text(
+                __import__("json").dumps(
+                    {
+                        "sources": [
+                            {
+                                "source_id": source_id,
+                                "provider": "notion",
+                            }
+                        ]
+                    }
+                )
+            )
+            with (
+                patch.object(sync_yuque, "REGISTRY", registry),
+                patch.object(sync_yuque, "build_graph"),
+                patch.object(sync_yuque, "lint", return_value={"ok": True}),
+            ):
+                with self.assertRaisesRegex(RuntimeError, "Notion|external sources"):
+                    sync_yuque.acknowledge([source_id])
+
     @staticmethod
     def record(source_id, title, updated):
         return {
             "source_id": f"yuque:{source_id}",
+            "provider": "yuque",
             "title": title,
             "content_updated_at": updated,
             "scope": "core",

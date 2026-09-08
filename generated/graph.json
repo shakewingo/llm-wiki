@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "nodes": [
     {
       "id": "agent-loop",
@@ -13,6 +13,11 @@
         "tool-calling loop",
         "reason-act-observe loop"
       ],
+      "sources": [
+        "yuque:263799689",
+        "yuque:261725390",
+        "yuque:275632325"
+      ],
       "path": "wiki/concepts/agent-loop.md"
     },
     {
@@ -25,6 +30,11 @@
       ],
       "aliases": [
         "long-term agent memory"
+      ],
+      "sources": [
+        "yuque:261725390",
+        "yuque:263799689",
+        "yuque:275632325"
       ],
       "path": "wiki/concepts/agent-memory.md"
     },
@@ -40,6 +50,10 @@
         "agent permissions",
         "least privilege"
       ],
+      "sources": [
+        "yuque:275632325",
+        "yuque:263799689"
+      ],
       "path": "wiki/concepts/agent-safety-boundaries.md"
     },
     {
@@ -52,6 +66,13 @@
         "ai-engineering"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:150979527",
+        "yuque:241262981",
+        "yuque:261725390",
+        "yuque:263799689",
+        "yuque:275632325"
+      ],
       "path": "wiki/interview/agent-systems-drills.md"
     },
     {
@@ -63,6 +84,13 @@
         "alignment"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:168068842",
+        "yuque:249024774",
+        "yuque:241299652",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/comparisons/alignment-methods.md"
     },
     {
@@ -77,6 +105,16 @@
         "multimodal"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:127456364",
+        "yuque:145103815",
+        "yuque:145103757",
+        "yuque:179434725",
+        "yuque:241262981",
+        "yuque:181670371",
+        "yuque:213041038",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/maps/applied-ai-and-evaluation.md"
     },
     {
@@ -89,6 +127,13 @@
         "causal-ml"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:145103815",
+        "yuque:145103757",
+        "yuque:179434725",
+        "yuque:241262981",
+        "yuque:213041038"
+      ],
       "path": "wiki/interview/applied-ai-drills.md"
     },
     {
@@ -100,7 +145,32 @@
         "inference"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:145901413",
+        "yuque:271488122",
+        "yuque:241299652"
+      ],
       "path": "wiki/comparisons/attention-cache-strategies.md"
+    },
+    {
+      "id": "backpropagation-and-autodiff",
+      "title": "Backpropagation and Automatic Differentiation",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "training"
+      ],
+      "aliases": [
+        "backpropagation",
+        "backprop",
+        "automatic differentiation",
+        "autodiff"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:222458626"
+      ],
+      "path": "wiki/concepts/backpropagation-and-autodiff.md"
     },
     {
       "id": "bayesian-networks",
@@ -113,6 +183,10 @@
       "aliases": [
         "Bayes net",
         "belief network"
+      ],
+      "sources": [
+        "yuque:203899196",
+        "yuque:179434725"
       ],
       "path": "wiki/concepts/bayesian-networks.md"
     },
@@ -127,6 +201,11 @@
       "aliases": [
         "Bidirectional Encoder Representations from Transformers"
       ],
+      "sources": [
+        "yuque:145104004",
+        "yuque:222458626",
+        "yuque:204005901"
+      ],
       "path": "wiki/concepts/bert.md"
     },
     {
@@ -140,6 +219,10 @@
       "aliases": [
         "masked self-attention"
       ],
+      "sources": [
+        "yuque:145104021",
+        "yuque:145901413"
+      ],
       "path": "wiki/concepts/causal-attention.md"
     },
     {
@@ -152,6 +235,9 @@
       ],
       "aliases": [
         "causal discovery"
+      ],
+      "sources": [
+        "yuque:179434725"
       ],
       "path": "wiki/concepts/causal-structure-learning.md"
     },
@@ -167,6 +253,10 @@
         "CoT",
         "reasoning trace"
       ],
+      "sources": [
+        "yuque:204005901",
+        "yuque:241299652"
+      ],
       "path": "wiki/concepts/chain-of-thought-reasoning.md"
     },
     {
@@ -179,6 +269,10 @@
       ],
       "aliases": [
         "classical machine learning"
+      ],
+      "sources": [
+        "yuque:127456364",
+        "yuque:222857934"
       ],
       "path": "wiki/concepts/classical-ml-methods.md"
     },
@@ -194,7 +288,53 @@
         "conversation summarization",
         "context compression"
       ],
+      "sources": [
+        "yuque:261725390",
+        "yuque:263799689",
+        "yuque:275632325"
+      ],
       "path": "wiki/concepts/context-compaction.md"
+    },
+    {
+      "id": "context-parallelism",
+      "title": "Context Parallelism",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "training",
+        "inference"
+      ],
+      "aliases": [
+        "CP",
+        "sequence parallelism",
+        "ring attention"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:283802487"
+      ],
+      "path": "wiki/concepts/context-parallelism.md"
+    },
+    {
+      "id": "continuous-batching-and-sequence-packing",
+      "title": "Continuous Batching and Sequence Packing",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "serving",
+        "training"
+      ],
+      "aliases": [
+        "continuous batching",
+        "in-flight batching",
+        "sequence packing",
+        "token-budget batching"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:279560513"
+      ],
+      "path": "wiki/concepts/continuous-batching-and-sequence-packing.md"
     },
     {
       "id": "contrastive-language-image-pretraining",
@@ -206,6 +346,10 @@
       ],
       "aliases": [
         "CLIP"
+      ],
+      "sources": [
+        "yuque:181670371",
+        "yuque:145950470"
       ],
       "path": "wiki/concepts/contrastive-language-image-pretraining.md"
     },
@@ -220,6 +364,10 @@
       "aliases": [
         "DP",
         "distributed data parallel"
+      ],
+      "sources": [
+        "yuque:283802487",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
       ],
       "path": "wiki/concepts/data-parallelism.md"
     },
@@ -236,7 +384,32 @@
         "top-p",
         "nucleus sampling"
       ],
+      "sources": [
+        "yuque:145901413",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/decoding-sampling-strategies.md"
+    },
+    {
+      "id": "deep-learning-optimization",
+      "title": "Deep Learning Optimization",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "training"
+      ],
+      "aliases": [
+        "AdamW",
+        "gradient clipping",
+        "learning-rate schedule"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:245719568",
+        "yuque:222458626"
+      ],
+      "path": "wiki/concepts/deep-learning-optimization.md"
     },
     {
       "id": "diffusion-model",
@@ -249,6 +422,9 @@
       "aliases": [
         "DDPM",
         "denoising diffusion"
+      ],
+      "sources": [
+        "yuque:145950470"
       ],
       "path": "wiki/concepts/diffusion-model.md"
     },
@@ -263,7 +439,32 @@
       "aliases": [
         "DPO"
       ],
+      "sources": [
+        "yuque:249024774",
+        "yuque:168068842",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/direct-preference-optimization.md"
+    },
+    {
+      "id": "distributed-collectives",
+      "title": "Distributed Collective Operations",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "training"
+      ],
+      "aliases": [
+        "all-reduce",
+        "all-gather",
+        "reduce-scatter",
+        "all-to-all"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:283802487"
+      ],
+      "path": "wiki/concepts/distributed-collectives.md"
     },
     {
       "id": "distributed-systems-drills",
@@ -275,6 +476,12 @@
         "mlops"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:283802487",
+        "yuque:253935769",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/interview/distributed-systems-drills.md"
     },
     {
@@ -287,6 +494,12 @@
         "mlops"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:283802487",
+        "yuque:253935769",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/maps/distributed-training-and-mlops.md"
     },
     {
@@ -301,6 +514,10 @@
       "aliases": [
         "DSA"
       ],
+      "sources": [
+        "yuque:267998961",
+        "yuque:241299652"
+      ],
       "path": "wiki/concepts/dynamic-sparse-attention.md"
     },
     {
@@ -313,6 +530,10 @@
       "aliases": [
         "sequence-to-sequence",
         "seq2seq"
+      ],
+      "sources": [
+        "yuque:145104021",
+        "yuque:222458626"
       ],
       "path": "wiki/concepts/encoder-decoder.md"
     },
@@ -327,6 +548,9 @@
       "aliases": [
         "Engram"
       ],
+      "sources": [
+        "yuque:260446359"
+      ],
       "path": "wiki/concepts/engram-conditional-memory.md"
     },
     {
@@ -339,6 +563,10 @@
       ],
       "aliases": [
         "message bus architecture"
+      ],
+      "sources": [
+        "yuque:261725390",
+        "yuque:263799689"
       ],
       "path": "wiki/concepts/event-driven-agent-architecture.md"
     },
@@ -354,7 +582,30 @@
       "aliases": [
         "EP"
       ],
+      "sources": [
+        "yuque:283802487",
+        "yuque:241299652",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/expert-parallelism.md"
+    },
+    {
+      "id": "flash-attention",
+      "title": "FlashAttention",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "training",
+        "systems"
+      ],
+      "aliases": [
+        "Flash Attention",
+        "IO-aware exact attention"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
+      "path": "wiki/concepts/flash-attention.md"
     },
     {
       "id": "foundations",
@@ -364,6 +615,14 @@
         "foundations"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:203899196",
+        "yuque:222857934",
+        "yuque:222458626",
+        "yuque:127456364",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/maps/foundations.md"
     },
     {
@@ -374,6 +633,13 @@
         "foundations"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:203899196",
+        "yuque:222857934",
+        "yuque:127456364",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/interview/foundations-drills.md"
     },
     {
@@ -388,6 +654,10 @@
         "FSDP",
         "ZeRO"
       ],
+      "sources": [
+        "yuque:283802487",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/fully-sharded-data-parallelism.md"
     },
     {
@@ -401,6 +671,10 @@
       "aliases": [
         "GAE"
       ],
+      "sources": [
+        "yuque:245719568",
+        "yuque:168068842"
+      ],
       "path": "wiki/concepts/generalized-advantage-estimation.md"
     },
     {
@@ -413,7 +687,31 @@
       "aliases": [
         "GAN"
       ],
+      "sources": [
+        "yuque:204005901"
+      ],
       "path": "wiki/concepts/generative-adversarial-network.md"
+    },
+    {
+      "id": "gpu-performance-model",
+      "title": "GPU Performance Model for LLMs",
+      "type": "concept",
+      "domains": [
+        "systems",
+        "training",
+        "inference"
+      ],
+      "aliases": [
+        "roofline model",
+        "arithmetic intensity",
+        "model FLOP utilization",
+        "MFU"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:283802487"
+      ],
+      "path": "wiki/concepts/gpu-performance-model.md"
     },
     {
       "id": "graph-neural-network",
@@ -427,6 +725,9 @@
         "GNN",
         "GCN"
       ],
+      "sources": [
+        "yuque:204005901"
+      ],
       "path": "wiki/concepts/graph-neural-network.md"
     },
     {
@@ -438,6 +739,9 @@
       ],
       "aliases": [
         "GES"
+      ],
+      "sources": [
+        "yuque:179434725"
       ],
       "path": "wiki/concepts/greedy-equivalence-search.md"
     },
@@ -451,6 +755,11 @@
       ],
       "aliases": [
         "GRPO"
+      ],
+      "sources": [
+        "yuque:241299652",
+        "yuque:245719568",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
       ],
       "path": "wiki/concepts/group-relative-policy-optimization.md"
     },
@@ -466,6 +775,10 @@
         "GQA",
         "grouped multi-query attention"
       ],
+      "sources": [
+        "yuque:145901413",
+        "yuque:271488122"
+      ],
       "path": "wiki/concepts/grouped-query-attention.md"
     },
     {
@@ -480,6 +793,10 @@
         "HITL",
         "approval gate"
       ],
+      "sources": [
+        "yuque:241262981",
+        "yuque:275632325"
+      ],
       "path": "wiki/concepts/human-in-the-loop-agents.md"
     },
     {
@@ -492,6 +809,11 @@
       ],
       "aliases": [
         "teacher-student distillation"
+      ],
+      "sources": [
+        "yuque:247276544",
+        "yuque:253935769",
+        "yuque:241299652"
       ],
       "path": "wiki/concepts/knowledge-distillation.md"
     },
@@ -507,7 +829,32 @@
         "key-value cache",
         "attention cache"
       ],
+      "sources": [
+        "yuque:145901413",
+        "yuque:279560513",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/kv-cache.md"
+    },
+    {
+      "id": "llm-compute-and-memory-accounting",
+      "title": "LLM Compute and Memory Accounting",
+      "type": "concept",
+      "domains": [
+        "systems",
+        "training",
+        "inference"
+      ],
+      "aliases": [
+        "LLM FLOP accounting",
+        "training memory accounting",
+        "inference memory accounting"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:283802487"
+      ],
+      "path": "wiki/concepts/llm-compute-and-memory-accounting.md"
     },
     {
       "id": "llm-evaluation",
@@ -519,6 +866,11 @@
       ],
       "aliases": [
         "LLM evals"
+      ],
+      "sources": [
+        "yuque:253935769",
+        "yuque:245719568",
+        "yuque:222857934"
       ],
       "path": "wiki/concepts/llm-evaluation.md"
     },
@@ -534,6 +886,9 @@
         "mHC",
         "hyper-connections"
       ],
+      "sources": [
+        "yuque:260283661"
+      ],
       "path": "wiki/concepts/manifold-constrained-hyper-connections.md"
     },
     {
@@ -546,6 +901,10 @@
       ],
       "aliases": [
         "MLM"
+      ],
+      "sources": [
+        "yuque:145104004",
+        "yuque:222458626"
       ],
       "path": "wiki/concepts/masked-language-modeling.md"
     },
@@ -560,6 +919,11 @@
       "aliases": [
         "BF16 training",
         "FP16 training"
+      ],
+      "sources": [
+        "yuque:245719568",
+        "yuque:283802487",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
       ],
       "path": "wiki/concepts/mixed-precision-training.md"
     },
@@ -576,6 +940,10 @@
         "MoE",
         "sparse MoE"
       ],
+      "sources": [
+        "yuque:241299652",
+        "yuque:283802487"
+      ],
       "path": "wiki/concepts/mixture-of-experts.md"
     },
     {
@@ -590,6 +958,11 @@
         "bias-variance tradeoff",
         "weight decay"
       ],
+      "sources": [
+        "yuque:222857934",
+        "yuque:222458626",
+        "yuque:245719568"
+      ],
       "path": "wiki/concepts/ml-generalization-and-regularization.md"
     },
     {
@@ -602,6 +975,15 @@
         "multimodal"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:145104004",
+        "yuque:145950470",
+        "yuque:181670371",
+        "yuque:204005901",
+        "yuque:260446359",
+        "yuque:260283661",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/maps/model-architecture-and-generation.md"
     },
     {
@@ -613,6 +995,14 @@
         "generative-models"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:145104004",
+        "yuque:145950470",
+        "yuque:181670371",
+        "yuque:260446359",
+        "yuque:260283661",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/interview/model-architecture-drills.md"
     },
     {
@@ -625,6 +1015,11 @@
       ],
       "aliases": [
         "MCP"
+      ],
+      "sources": [
+        "yuque:241262981",
+        "yuque:213041038",
+        "yuque:275632325"
       ],
       "path": "wiki/concepts/model-context-protocol.md"
     },
@@ -642,6 +1037,11 @@
         "FP8",
         "low-precision inference"
       ],
+      "sources": [
+        "yuque:245719568",
+        "yuque:253935769",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/model-quantization.md"
     },
     {
@@ -656,6 +1056,10 @@
         "agent teams",
         "supervisor-worker agents"
       ],
+      "sources": [
+        "yuque:241262981",
+        "yuque:275632325"
+      ],
       "path": "wiki/concepts/multi-agent-orchestration.md"
     },
     {
@@ -668,6 +1072,10 @@
       ],
       "aliases": [
         "MLA"
+      ],
+      "sources": [
+        "yuque:271488122",
+        "yuque:241299652"
       ],
       "path": "wiki/concepts/multi-head-latent-attention.md"
     },
@@ -682,6 +1090,10 @@
       "aliases": [
         "MQA"
       ],
+      "sources": [
+        "yuque:145901413",
+        "yuque:271488122"
+      ],
       "path": "wiki/concepts/multi-query-attention.md"
     },
     {
@@ -694,6 +1106,10 @@
       ],
       "aliases": [
         "MTP"
+      ],
+      "sources": [
+        "yuque:267998979",
+        "yuque:241299652"
       ],
       "path": "wiki/concepts/multi-token-prediction.md"
     },
@@ -708,7 +1124,52 @@
       "aliases": [
         "vision-language system"
       ],
+      "sources": [
+        "yuque:181670371",
+        "yuque:253935769",
+        "yuque:213041038",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/multimodal-ai-systems.md"
+    },
+    {
+      "id": "neural-network-computation",
+      "title": "Neural Network Computation",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "model-architecture"
+      ],
+      "aliases": [
+        "multi-layer perceptron",
+        "MLP",
+        "feed-forward neural network"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:222458626"
+      ],
+      "path": "wiki/concepts/neural-network-computation.md"
+    },
+    {
+      "id": "numerical-stability",
+      "title": "Numerical Stability in Neural Networks",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "training",
+        "systems"
+      ],
+      "aliases": [
+        "log-sum-exp trick",
+        "stable softmax",
+        "online softmax"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:245719568"
+      ],
+      "path": "wiki/concepts/numerical-stability.md"
     },
     {
       "id": "paged-attention",
@@ -721,6 +1182,9 @@
       "aliases": [
         "PagedAttention"
       ],
+      "sources": [
+        "yuque:279560513"
+      ],
       "path": "wiki/concepts/paged-attention.md"
     },
     {
@@ -732,6 +1196,9 @@
       ],
       "aliases": [
         "Peter-Clark algorithm"
+      ],
+      "sources": [
+        "yuque:179434725"
       ],
       "path": "wiki/concepts/pc-algorithm.md"
     },
@@ -746,6 +1213,11 @@
       "aliases": [
         "PP"
       ],
+      "sources": [
+        "yuque:283802487",
+        "yuque:260283661",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/pipeline-parallelism.md"
     },
     {
@@ -759,6 +1231,11 @@
       "aliases": [
         "REINFORCE"
       ],
+      "sources": [
+        "yuque:168068842",
+        "yuque:222857934",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/policy-gradient.md"
     },
     {
@@ -771,6 +1248,15 @@
         "reasoning"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:168068842",
+        "yuque:249024774",
+        "yuque:241299652",
+        "yuque:245719568",
+        "yuque:253935769",
+        "yuque:247276544",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/maps/post-training-and-alignment.md"
     },
     {
@@ -782,6 +1268,12 @@
         "alignment"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:168068842",
+        "yuque:249024774",
+        "yuque:241299652",
+        "yuque:245719568"
+      ],
       "path": "wiki/interview/post-training-drills.md"
     },
     {
@@ -794,6 +1286,11 @@
       ],
       "aliases": [
         "foundation-model training"
+      ],
+      "sources": [
+        "yuque:145104021",
+        "yuque:253935769",
+        "yuque:247276544"
       ],
       "path": "wiki/concepts/pretraining.md"
     },
@@ -810,6 +1307,11 @@
         "MLE",
         "KL divergence"
       ],
+      "sources": [
+        "yuque:245719568",
+        "yuque:222857934",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/probabilistic-objectives.md"
     },
     {
@@ -824,6 +1326,9 @@
         "prefix caching",
         "prefix cache"
       ],
+      "sources": [
+        "yuque:279560513"
+      ],
       "path": "wiki/concepts/prompt-caching.md"
     },
     {
@@ -836,6 +1341,11 @@
       ],
       "aliases": [
         "PPO"
+      ],
+      "sources": [
+        "yuque:168068842",
+        "yuque:241299652",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
       ],
       "path": "wiki/concepts/proximal-policy-optimization.md"
     },
@@ -850,7 +1360,29 @@
       "aliases": [
         "RadixAttention"
       ],
+      "sources": [
+        "yuque:279560513"
+      ],
       "path": "wiki/concepts/radix-attention.md"
+    },
+    {
+      "id": "recurrent-neural-network",
+      "title": "Recurrent Neural Networks",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "sequence-modeling"
+      ],
+      "aliases": [
+        "RNN",
+        "LSTM",
+        "GRU"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:222458626"
+      ],
+      "path": "wiki/concepts/recurrent-neural-network.md"
     },
     {
       "id": "reinforcement-learning",
@@ -862,6 +1394,11 @@
       ],
       "aliases": [
         "RL"
+      ],
+      "sources": [
+        "yuque:222857934",
+        "yuque:168068842",
+        "yuque:241299652"
       ],
       "path": "wiki/concepts/reinforcement-learning.md"
     },
@@ -876,6 +1413,11 @@
       "aliases": [
         "ResNet",
         "residual connection"
+      ],
+      "sources": [
+        "yuque:222458626",
+        "yuque:204005901",
+        "yuque:260283661"
       ],
       "path": "wiki/concepts/residual-network.md"
     },
@@ -892,6 +1434,9 @@
         "digital persona safety",
         "voice-clone safety"
       ],
+      "sources": [
+        "yuque:213041038"
+      ],
       "path": "wiki/concepts/responsible-synthetic-personas.md"
     },
     {
@@ -904,6 +1449,14 @@
         "ai-engineering"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:150979527",
+        "yuque:253935769",
+        "yuque:241262981",
+        "yuque:261725390",
+        "yuque:263799689",
+        "yuque:275632325"
+      ],
       "path": "wiki/maps/retrieval-and-agent-systems.md"
     },
     {
@@ -916,6 +1469,11 @@
       ],
       "aliases": [
         "RAG"
+      ],
+      "sources": [
+        "yuque:150979527",
+        "yuque:253935769",
+        "yuque:213041038"
       ],
       "path": "wiki/concepts/retrieval-augmented-generation.md"
     },
@@ -931,6 +1489,11 @@
         "preference model",
         "reward model"
       ],
+      "sources": [
+        "yuque:168068842",
+        "yuque:249024774",
+        "yuque:241299652"
+      ],
       "path": "wiki/concepts/reward-modeling.md"
     },
     {
@@ -944,7 +1507,29 @@
       "aliases": [
         "RLHF"
       ],
+      "sources": [
+        "yuque:168068842",
+        "yuque:241299652",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/rlhf.md"
+    },
+    {
+      "id": "rms-normalization",
+      "title": "Root Mean Square Normalization",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "training"
+      ],
+      "aliases": [
+        "RMSNorm"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:145901413"
+      ],
+      "path": "wiki/concepts/rms-normalization.md"
     },
     {
       "id": "root-cause-analysis",
@@ -957,6 +1542,10 @@
       ],
       "aliases": [
         "RCA agent"
+      ],
+      "sources": [
+        "yuque:241262981",
+        "yuque:179434725"
       ],
       "path": "wiki/concepts/root-cause-analysis.md"
     },
@@ -972,6 +1561,11 @@
         "RoPE",
         "rotary embedding"
       ],
+      "sources": [
+        "yuque:145901413",
+        "yuque:271488122",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/rotary-position-embedding.md"
     },
     {
@@ -985,6 +1579,9 @@
         "A-star search",
         "graph search"
       ],
+      "sources": [
+        "yuque:203899196"
+      ],
       "path": "wiki/concepts/search-and-a-star.md"
     },
     {
@@ -996,6 +1593,10 @@
       ],
       "aliases": [
         "scaled dot-product attention"
+      ],
+      "sources": [
+        "yuque:145104021",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
       ],
       "path": "wiki/concepts/self-attention.md"
     },
@@ -1011,7 +1612,24 @@
         "semantic embeddings",
         "Sentence-BERT"
       ],
+      "sources": [
+        "yuque:150979527"
+      ],
       "path": "wiki/concepts/sentence-embeddings.md"
+    },
+    {
+      "id": "sequence-model-families",
+      "title": "RNNs, Transformers, and State Space Models",
+      "type": "comparison",
+      "domains": [
+        "model-architecture",
+        "sequence-modeling"
+      ],
+      "aliases": [],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
+      "path": "wiki/comparisons/sequence-model-families.md"
     },
     {
       "id": "sparse-representations",
@@ -1023,6 +1641,9 @@
       ],
       "aliases": [
         "sparse matrix"
+      ],
+      "sources": [
+        "yuque:224766388"
       ],
       "path": "wiki/concepts/sparse-representations.md"
     },
@@ -1037,6 +1658,9 @@
       "aliases": [
         "SR-CNN"
       ],
+      "sources": [
+        "yuque:145103815"
+      ],
       "path": "wiki/concepts/spectral-residual-cnn.md"
     },
     {
@@ -1049,7 +1673,30 @@
       "aliases": [
         "speculative sampling"
       ],
+      "sources": [
+        "yuque:267998979",
+        "yuque:241299652",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/speculative-decoding.md"
+    },
+    {
+      "id": "state-space-model",
+      "title": "State Space Models",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "sequence-modeling"
+      ],
+      "aliases": [
+        "SSM",
+        "selective state space model",
+        "Mamba"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
+      "path": "wiki/concepts/state-space-model.md"
     },
     {
       "id": "supervised-fine-tuning",
@@ -1063,7 +1710,29 @@
         "SFT",
         "instruction tuning"
       ],
+      "sources": [
+        "yuque:253935769",
+        "yuque:168068842",
+        "yuque:241299652"
+      ],
       "path": "wiki/concepts/supervised-fine-tuning.md"
+    },
+    {
+      "id": "swiglu-feed-forward-network",
+      "title": "SwiGLU Feed-Forward Network",
+      "type": "concept",
+      "domains": [
+        "model-architecture"
+      ],
+      "aliases": [
+        "SwiGLU",
+        "gated feed-forward network"
+      ],
+      "sources": [
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0",
+        "yuque:145901413"
+      ],
+      "path": "wiki/concepts/swiglu-feed-forward-network.md"
     },
     {
       "id": "temporal-difference-learning",
@@ -1077,6 +1746,10 @@
         "TD learning",
         "Q-learning",
         "SARSA"
+      ],
+      "sources": [
+        "yuque:222857934",
+        "yuque:168068842"
       ],
       "path": "wiki/concepts/temporal-difference-learning.md"
     },
@@ -1092,6 +1765,10 @@
       "aliases": [
         "TP"
       ],
+      "sources": [
+        "yuque:283802487",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/tensor-parallelism.md"
     },
     {
@@ -1104,6 +1781,11 @@
       ],
       "aliases": [
         "KPI anomaly detection"
+      ],
+      "sources": [
+        "yuque:127456364",
+        "yuque:145103815",
+        "yuque:145103757"
       ],
       "path": "wiki/concepts/time-series-anomaly-detection.md"
     },
@@ -1119,6 +1801,11 @@
         "function calling",
         "tool calling"
       ],
+      "sources": [
+        "yuque:275632325",
+        "yuque:263799689",
+        "yuque:230859031"
+      ],
       "path": "wiki/concepts/tool-use-function-calling.md"
     },
     {
@@ -1132,6 +1819,11 @@
       "aliases": [
         "transformer"
       ],
+      "sources": [
+        "yuque:145104021",
+        "yuque:145901413",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/concepts/transformer-architecture.md"
     },
     {
@@ -1144,6 +1836,17 @@
         "serving"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:145104021",
+        "yuque:145901413",
+        "yuque:271488122",
+        "yuque:267998979",
+        "yuque:279560513",
+        "yuque:267998961",
+        "yuque:283802487",
+        "yuque:241299652",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/maps/transformer-inference.md"
     },
     {
@@ -1155,6 +1858,15 @@
         "serving"
       ],
       "aliases": [],
+      "sources": [
+        "yuque:145901413",
+        "yuque:271488122",
+        "yuque:267998979",
+        "yuque:279560513",
+        "yuque:267998961",
+        "yuque:283802487",
+        "notion:388cad4f-b605-8074-8c53-ff558a15beb0"
+      ],
       "path": "wiki/interview/transformer-inference-drills.md"
     },
     {
@@ -1168,6 +1880,9 @@
       "aliases": [
         "LOF-VAE"
       ],
+      "sources": [
+        "yuque:145103757"
+      ],
       "path": "wiki/concepts/vae-lof-anomaly-detection.md"
     },
     {
@@ -1180,6 +1895,10 @@
       ],
       "aliases": [
         "VAE"
+      ],
+      "sources": [
+        "yuque:145950470",
+        "yuque:145103757"
       ],
       "path": "wiki/concepts/variational-autoencoder.md"
     },
@@ -1195,6 +1914,10 @@
         "vector store",
         "HNSW",
         "approximate nearest-neighbor search"
+      ],
+      "sources": [
+        "yuque:150979527",
+        "yuque:253935769"
       ],
       "path": "wiki/concepts/vector-database.md"
     }
@@ -1278,6 +2001,21 @@
     {
       "source": "attention-cache-strategies",
       "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "backpropagation-and-autodiff",
+      "target": "deep-learning-optimization",
+      "type": "enables"
+    },
+    {
+      "source": "backpropagation-and-autodiff",
+      "target": "llm-compute-and-memory-accounting",
+      "type": "enables"
+    },
+    {
+      "source": "backpropagation-and-autodiff",
+      "target": "neural-network-computation",
       "type": "prerequisites"
     },
     {
@@ -1376,6 +2114,46 @@
       "type": "prerequisites"
     },
     {
+      "source": "context-parallelism",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "context-parallelism",
+      "target": "llm-compute-and-memory-accounting",
+      "type": "affects"
+    },
+    {
+      "source": "context-parallelism",
+      "target": "distributed-collectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "context-parallelism",
+      "target": "flash-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "context-parallelism",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "continuous-batching-and-sequence-packing",
+      "target": "llm-compute-and-memory-accounting",
+      "type": "affects"
+    },
+    {
+      "source": "continuous-batching-and-sequence-packing",
+      "target": "paged-attention",
+      "type": "optimized_by"
+    },
+    {
+      "source": "continuous-batching-and-sequence-packing",
+      "target": "kv-cache",
+      "type": "prerequisites"
+    },
+    {
       "source": "contrastive-language-image-pretraining",
       "target": "diffusion-model",
       "type": "enables"
@@ -1409,6 +2187,31 @@
       "source": "decoding-sampling-strategies",
       "target": "causal-attention",
       "type": "prerequisites"
+    },
+    {
+      "source": "deep-learning-optimization",
+      "target": "backpropagation-and-autodiff",
+      "type": "prerequisites"
+    },
+    {
+      "source": "deep-learning-optimization",
+      "target": "ml-generalization-and-regularization",
+      "type": "prerequisites"
+    },
+    {
+      "source": "deep-learning-optimization",
+      "target": "pretraining",
+      "type": "used_by"
+    },
+    {
+      "source": "deep-learning-optimization",
+      "target": "rlhf",
+      "type": "used_by"
+    },
+    {
+      "source": "deep-learning-optimization",
+      "target": "supervised-fine-tuning",
+      "type": "used_by"
     },
     {
       "source": "diffusion-model",
@@ -1454,6 +2257,36 @@
       "source": "direct-preference-optimization",
       "target": "supervised-fine-tuning",
       "type": "prerequisites"
+    },
+    {
+      "source": "distributed-collectives",
+      "target": "gpu-performance-model",
+      "type": "prerequisites"
+    },
+    {
+      "source": "distributed-collectives",
+      "target": "context-parallelism",
+      "type": "used_by"
+    },
+    {
+      "source": "distributed-collectives",
+      "target": "data-parallelism",
+      "type": "used_by"
+    },
+    {
+      "source": "distributed-collectives",
+      "target": "expert-parallelism",
+      "type": "used_by"
+    },
+    {
+      "source": "distributed-collectives",
+      "target": "fully-sharded-data-parallelism",
+      "type": "used_by"
+    },
+    {
+      "source": "distributed-collectives",
+      "target": "tensor-parallelism",
+      "type": "used_by"
     },
     {
       "source": "distributed-systems-drills",
@@ -1531,6 +2364,26 @@
       "type": "prerequisites"
     },
     {
+      "source": "flash-attention",
+      "target": "llm-compute-and-memory-accounting",
+      "type": "affects"
+    },
+    {
+      "source": "flash-attention",
+      "target": "gpu-performance-model",
+      "type": "prerequisites"
+    },
+    {
+      "source": "flash-attention",
+      "target": "numerical-stability",
+      "type": "prerequisites"
+    },
+    {
+      "source": "flash-attention",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
       "source": "foundations",
       "target": "causal-structure-learning",
       "type": "enables"
@@ -1584,6 +2437,21 @@
       "source": "generative-adversarial-network",
       "target": "probabilistic-objectives",
       "type": "prerequisites"
+    },
+    {
+      "source": "gpu-performance-model",
+      "target": "distributed-collectives",
+      "type": "enables"
+    },
+    {
+      "source": "gpu-performance-model",
+      "target": "flash-attention",
+      "type": "enables"
+    },
+    {
+      "source": "gpu-performance-model",
+      "target": "llm-compute-and-memory-accounting",
+      "type": "enables"
     },
     {
       "source": "graph-neural-network",
@@ -1704,6 +2572,41 @@
       "source": "kv-cache",
       "target": "causal-attention",
       "type": "prerequisites"
+    },
+    {
+      "source": "kv-cache",
+      "target": "continuous-batching-and-sequence-packing",
+      "type": "used_by"
+    },
+    {
+      "source": "llm-compute-and-memory-accounting",
+      "target": "backpropagation-and-autodiff",
+      "type": "prerequisites"
+    },
+    {
+      "source": "llm-compute-and-memory-accounting",
+      "target": "gpu-performance-model",
+      "type": "prerequisites"
+    },
+    {
+      "source": "llm-compute-and-memory-accounting",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "llm-compute-and-memory-accounting",
+      "target": "fully-sharded-data-parallelism",
+      "type": "used_by"
+    },
+    {
+      "source": "llm-compute-and-memory-accounting",
+      "target": "kv-cache",
+      "type": "used_by"
+    },
+    {
+      "source": "llm-compute-and-memory-accounting",
+      "target": "mixed-precision-training",
+      "type": "used_by"
     },
     {
       "source": "llm-evaluation",
@@ -1911,6 +2814,46 @@
       "type": "used_by"
     },
     {
+      "source": "neural-network-computation",
+      "target": "backpropagation-and-autodiff",
+      "type": "enables"
+    },
+    {
+      "source": "neural-network-computation",
+      "target": "recurrent-neural-network",
+      "type": "enables"
+    },
+    {
+      "source": "neural-network-computation",
+      "target": "transformer-architecture",
+      "type": "enables"
+    },
+    {
+      "source": "numerical-stability",
+      "target": "flash-attention",
+      "type": "affects"
+    },
+    {
+      "source": "numerical-stability",
+      "target": "mixed-precision-training",
+      "type": "affects"
+    },
+    {
+      "source": "numerical-stability",
+      "target": "self-attention",
+      "type": "affects"
+    },
+    {
+      "source": "numerical-stability",
+      "target": "neural-network-computation",
+      "type": "prerequisites"
+    },
+    {
+      "source": "numerical-stability",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
       "source": "paged-attention",
       "target": "kv-cache",
       "type": "affects"
@@ -2061,6 +3004,26 @@
       "type": "prerequisites"
     },
     {
+      "source": "recurrent-neural-network",
+      "target": "state-space-model",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "recurrent-neural-network",
+      "target": "transformer-architecture",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "recurrent-neural-network",
+      "target": "backpropagation-and-autodiff",
+      "type": "prerequisites"
+    },
+    {
+      "source": "recurrent-neural-network",
+      "target": "neural-network-computation",
+      "type": "prerequisites"
+    },
+    {
       "source": "reinforcement-learning",
       "target": "policy-gradient",
       "type": "enables"
@@ -2186,6 +3149,16 @@
       "type": "prerequisites"
     },
     {
+      "source": "rms-normalization",
+      "target": "mixed-precision-training",
+      "type": "affects"
+    },
+    {
+      "source": "rms-normalization",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
       "source": "root-cause-analysis",
       "target": "event-driven-agent-architecture",
       "type": "implemented_in"
@@ -2232,6 +3205,11 @@
     },
     {
       "source": "self-attention",
+      "target": "flash-attention",
+      "type": "optimized_by"
+    },
+    {
+      "source": "self-attention",
       "target": "transformer-architecture",
       "type": "part_of"
     },
@@ -2248,6 +3226,21 @@
     {
       "source": "sentence-embeddings",
       "target": "bert",
+      "type": "prerequisites"
+    },
+    {
+      "source": "sequence-model-families",
+      "target": "recurrent-neural-network",
+      "type": "prerequisites"
+    },
+    {
+      "source": "sequence-model-families",
+      "target": "state-space-model",
+      "type": "prerequisites"
+    },
+    {
+      "source": "sequence-model-families",
+      "target": "transformer-architecture",
       "type": "prerequisites"
     },
     {
@@ -2281,6 +3274,21 @@
       "type": "prerequisites"
     },
     {
+      "source": "state-space-model",
+      "target": "recurrent-neural-network",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "state-space-model",
+      "target": "transformer-architecture",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "state-space-model",
+      "target": "recurrent-neural-network",
+      "type": "prerequisites"
+    },
+    {
       "source": "supervised-fine-tuning",
       "target": "direct-preference-optimization",
       "type": "enables"
@@ -2293,6 +3301,16 @@
     {
       "source": "supervised-fine-tuning",
       "target": "pretraining",
+      "type": "prerequisites"
+    },
+    {
+      "source": "swiglu-feed-forward-network",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
+      "source": "swiglu-feed-forward-network",
+      "target": "neural-network-computation",
       "type": "prerequisites"
     },
     {
@@ -2353,6 +3371,16 @@
     {
       "source": "transformer-architecture",
       "target": "graph-neural-network",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "transformer-architecture",
+      "target": "recurrent-neural-network",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "transformer-architecture",
+      "target": "state-space-model",
       "type": "contrasts_with"
     },
     {

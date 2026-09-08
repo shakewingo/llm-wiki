@@ -8,7 +8,7 @@ level: advanced
 relations:
   prerequisites: [mixture-of-experts]
   part_of: [mixture-of-experts]
-sources: [yuque:283802487, yuque:241299652]
+sources: [yuque:283802487, yuque:241299652, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Expert Parallelism
@@ -32,6 +32,7 @@ whether it is actually faster.”
 
 - [Distributed Framework](https://www.yuque.com/shakewin/sysgq3/mhw00hcggbv1scr8)
 - [DeepSeek Paper Reading](https://www.yuque.com/shakewin/woezs0/agn9y7w2skcvzzrk)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

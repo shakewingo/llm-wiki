@@ -9,7 +9,7 @@ relations:
   prerequisites: [transformer-architecture]
   affects: [kv-cache]
   contrasts_with: [fully-sharded-data-parallelism]
-sources: [yuque:283802487]
+sources: [yuque:283802487, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Tensor Parallelism
@@ -32,6 +32,7 @@ latency and bandwidth decisive.”
 ## Source
 
 - [Distributed Framework](https://www.yuque.com/shakewin/sysgq3/mhw00hcggbv1scr8)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

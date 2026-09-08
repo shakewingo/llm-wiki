@@ -7,7 +7,7 @@ aliases: []
 level: mixed
 relations:
   prerequisites: [model-architecture-and-generation]
-sources: [yuque:145104004, yuque:145950470, yuque:181670371, yuque:260446359, yuque:260283661]
+sources: [yuque:145104004, yuque:145950470, yuque:181670371, yuque:260446359, yuque:260283661, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
 # Model Architecture Drills
@@ -37,6 +37,22 @@ n-gram memory from tokens. They scale different resources.
 
 Multiple residual streams increase activation and pipeline communication, so fused
 kernels and overlap-aware scheduling are part of the usable architecture.
+
+## What does RMSNorm remove compared with LayerNorm?
+
+It controls root-mean-square magnitude without subtracting the feature mean. A
+learned gain restores per-dimension scale after normalization.
+
+## Why is SwiGLU called gated?
+
+One learned projection, passed through SiLU, multiplicatively controls another
+learned projection before the down projection.
+
+## Compare RNN, Transformer, and selective SSM state.
+
+An RNN repeatedly compresses into a hidden state; a Transformer keeps explicit KV
+history for direct lookup; a selective SSM maintains compact structured state whose
+dynamics depend on input. Compare parallelism, exact recall, and memory growth.
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships

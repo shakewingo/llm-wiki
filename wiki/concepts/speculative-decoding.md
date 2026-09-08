@@ -8,7 +8,7 @@ level: intermediate
 relations:
   prerequisites: [causal-attention]
   affects: [kv-cache]
-sources: [yuque:267998979, yuque:241299652]
+sources: [yuque:267998979, yuque:241299652, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 legacy_notion_id: 0e8cad4f-b605-82e9-ae12-813a91ea3581
 ---
 
@@ -35,6 +35,7 @@ correction to preserve the target distribution.”
 
 - [MTP](https://www.yuque.com/shakewin/woezs0/xsgrva9gef5pwz5n)
 - [DeepSeek Paper Reading](https://www.yuque.com/shakewin/woezs0/agn9y7w2skcvzzrk)
+- [Alisa’s book of LLMs](https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0)
 
 <!-- BEGIN GENERATED OBSIDIAN LINKS -->
 ## Obsidian relationships
