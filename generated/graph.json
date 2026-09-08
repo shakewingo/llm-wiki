@@ -1,0 +1,2434 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {
+      "id": "agent-loop",
+      "title": "Agent Loop",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "ai-engineering"
+      ],
+      "aliases": [
+        "tool-calling loop",
+        "reason-act-observe loop"
+      ],
+      "path": "wiki/concepts/agent-loop.md"
+    },
+    {
+      "id": "agent-memory",
+      "title": "Agent Memory",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "memory"
+      ],
+      "aliases": [
+        "long-term agent memory"
+      ],
+      "path": "wiki/concepts/agent-memory.md"
+    },
+    {
+      "id": "agent-safety-boundaries",
+      "title": "Agent Safety Boundaries",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "safety"
+      ],
+      "aliases": [
+        "agent permissions",
+        "least privilege"
+      ],
+      "path": "wiki/concepts/agent-safety-boundaries.md"
+    },
+    {
+      "id": "agent-systems-drills",
+      "title": "Retrieval and Agent Systems Drills",
+      "type": "interview",
+      "domains": [
+        "retrieval",
+        "agent-systems",
+        "ai-engineering"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/agent-systems-drills.md"
+    },
+    {
+      "id": "alignment-methods",
+      "title": "RLHF, DPO, and GRPO",
+      "type": "comparison",
+      "domains": [
+        "post-training",
+        "alignment"
+      ],
+      "aliases": [],
+      "path": "wiki/comparisons/alignment-methods.md"
+    },
+    {
+      "id": "applied-ai-and-evaluation",
+      "title": "Applied AI and Evaluation Map",
+      "type": "map",
+      "domains": [
+        "applied-ai",
+        "applied-ml",
+        "evaluation",
+        "causal-ml",
+        "multimodal"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/applied-ai-and-evaluation.md"
+    },
+    {
+      "id": "applied-ai-drills",
+      "title": "Applied AI and Evaluation Drills",
+      "type": "interview",
+      "domains": [
+        "applied-ai",
+        "evaluation",
+        "causal-ml"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/applied-ai-drills.md"
+    },
+    {
+      "id": "attention-cache-strategies",
+      "title": "MHA, MQA, GQA, and MLA",
+      "type": "comparison",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [],
+      "path": "wiki/comparisons/attention-cache-strategies.md"
+    },
+    {
+      "id": "bayesian-networks",
+      "title": "Bayesian Networks",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "causal-ml"
+      ],
+      "aliases": [
+        "Bayes net",
+        "belief network"
+      ],
+      "path": "wiki/concepts/bayesian-networks.md"
+    },
+    {
+      "id": "bert",
+      "title": "BERT",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "pretraining"
+      ],
+      "aliases": [
+        "Bidirectional Encoder Representations from Transformers"
+      ],
+      "path": "wiki/concepts/bert.md"
+    },
+    {
+      "id": "causal-attention",
+      "title": "Causal Attention",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [
+        "masked self-attention"
+      ],
+      "path": "wiki/concepts/causal-attention.md"
+    },
+    {
+      "id": "causal-structure-learning",
+      "title": "Causal Structure Learning",
+      "type": "concept",
+      "domains": [
+        "causal-ml",
+        "applied-ml"
+      ],
+      "aliases": [
+        "causal discovery"
+      ],
+      "path": "wiki/concepts/causal-structure-learning.md"
+    },
+    {
+      "id": "chain-of-thought-reasoning",
+      "title": "Chain-of-Thought Reasoning",
+      "type": "concept",
+      "domains": [
+        "reasoning",
+        "post-training"
+      ],
+      "aliases": [
+        "CoT",
+        "reasoning trace"
+      ],
+      "path": "wiki/concepts/chain-of-thought-reasoning.md"
+    },
+    {
+      "id": "classical-ml-methods",
+      "title": "Classical ML Methods",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "applied-ml"
+      ],
+      "aliases": [
+        "classical machine learning"
+      ],
+      "path": "wiki/concepts/classical-ml-methods.md"
+    },
+    {
+      "id": "context-compaction",
+      "title": "Context Compaction",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "memory"
+      ],
+      "aliases": [
+        "conversation summarization",
+        "context compression"
+      ],
+      "path": "wiki/concepts/context-compaction.md"
+    },
+    {
+      "id": "contrastive-language-image-pretraining",
+      "title": "Contrastive Language–Image Pretraining",
+      "type": "concept",
+      "domains": [
+        "multimodal",
+        "model-architecture"
+      ],
+      "aliases": [
+        "CLIP"
+      ],
+      "path": "wiki/concepts/contrastive-language-image-pretraining.md"
+    },
+    {
+      "id": "data-parallelism",
+      "title": "Data Parallelism",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "training"
+      ],
+      "aliases": [
+        "DP",
+        "distributed data parallel"
+      ],
+      "path": "wiki/concepts/data-parallelism.md"
+    },
+    {
+      "id": "decoding-sampling-strategies",
+      "title": "Decoding and Sampling Strategies",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "evaluation"
+      ],
+      "aliases": [
+        "top-k",
+        "top-p",
+        "nucleus sampling"
+      ],
+      "path": "wiki/concepts/decoding-sampling-strategies.md"
+    },
+    {
+      "id": "diffusion-model",
+      "title": "Diffusion Models",
+      "type": "concept",
+      "domains": [
+        "generative-models",
+        "multimodal"
+      ],
+      "aliases": [
+        "DDPM",
+        "denoising diffusion"
+      ],
+      "path": "wiki/concepts/diffusion-model.md"
+    },
+    {
+      "id": "direct-preference-optimization",
+      "title": "Direct Preference Optimization",
+      "type": "concept",
+      "domains": [
+        "post-training",
+        "alignment"
+      ],
+      "aliases": [
+        "DPO"
+      ],
+      "path": "wiki/concepts/direct-preference-optimization.md"
+    },
+    {
+      "id": "distributed-systems-drills",
+      "title": "Distributed Training and MLOps Drills",
+      "type": "interview",
+      "domains": [
+        "distributed-systems",
+        "training",
+        "mlops"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/distributed-systems-drills.md"
+    },
+    {
+      "id": "distributed-training-and-mlops",
+      "title": "Distributed Training and MLOps Map",
+      "type": "map",
+      "domains": [
+        "distributed-systems",
+        "training",
+        "mlops"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/distributed-training-and-mlops.md"
+    },
+    {
+      "id": "dynamic-sparse-attention",
+      "title": "Dynamic Sparse Attention",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference",
+        "training"
+      ],
+      "aliases": [
+        "DSA"
+      ],
+      "path": "wiki/concepts/dynamic-sparse-attention.md"
+    },
+    {
+      "id": "encoder-decoder",
+      "title": "Encoder–Decoder Models",
+      "type": "concept",
+      "domains": [
+        "model-architecture"
+      ],
+      "aliases": [
+        "sequence-to-sequence",
+        "seq2seq"
+      ],
+      "path": "wiki/concepts/encoder-decoder.md"
+    },
+    {
+      "id": "engram-conditional-memory",
+      "title": "Engram Conditional Memory",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "memory"
+      ],
+      "aliases": [
+        "Engram"
+      ],
+      "path": "wiki/concepts/engram-conditional-memory.md"
+    },
+    {
+      "id": "event-driven-agent-architecture",
+      "title": "Event-Driven Agent Architecture",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "ai-engineering"
+      ],
+      "aliases": [
+        "message bus architecture"
+      ],
+      "path": "wiki/concepts/event-driven-agent-architecture.md"
+    },
+    {
+      "id": "expert-parallelism",
+      "title": "Expert Parallelism",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "inference",
+        "training"
+      ],
+      "aliases": [
+        "EP"
+      ],
+      "path": "wiki/concepts/expert-parallelism.md"
+    },
+    {
+      "id": "foundations",
+      "title": "AI and ML Foundations Map",
+      "type": "map",
+      "domains": [
+        "foundations"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/foundations.md"
+    },
+    {
+      "id": "foundations-drills",
+      "title": "AI Foundations Drills",
+      "type": "interview",
+      "domains": [
+        "foundations"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/foundations-drills.md"
+    },
+    {
+      "id": "fully-sharded-data-parallelism",
+      "title": "Fully Sharded Data Parallelism",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "training"
+      ],
+      "aliases": [
+        "FSDP",
+        "ZeRO"
+      ],
+      "path": "wiki/concepts/fully-sharded-data-parallelism.md"
+    },
+    {
+      "id": "generalized-advantage-estimation",
+      "title": "Generalized Advantage Estimation",
+      "type": "concept",
+      "domains": [
+        "reinforcement-learning",
+        "post-training"
+      ],
+      "aliases": [
+        "GAE"
+      ],
+      "path": "wiki/concepts/generalized-advantage-estimation.md"
+    },
+    {
+      "id": "generative-adversarial-network",
+      "title": "Generative Adversarial Networks",
+      "type": "concept",
+      "domains": [
+        "generative-models"
+      ],
+      "aliases": [
+        "GAN"
+      ],
+      "path": "wiki/concepts/generative-adversarial-network.md"
+    },
+    {
+      "id": "graph-neural-network",
+      "title": "Graph Neural Networks",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "graph-ml"
+      ],
+      "aliases": [
+        "GNN",
+        "GCN"
+      ],
+      "path": "wiki/concepts/graph-neural-network.md"
+    },
+    {
+      "id": "greedy-equivalence-search",
+      "title": "Greedy Equivalence Search",
+      "type": "concept",
+      "domains": [
+        "causal-ml"
+      ],
+      "aliases": [
+        "GES"
+      ],
+      "path": "wiki/concepts/greedy-equivalence-search.md"
+    },
+    {
+      "id": "group-relative-policy-optimization",
+      "title": "Group Relative Policy Optimization",
+      "type": "concept",
+      "domains": [
+        "post-training",
+        "reinforcement-learning"
+      ],
+      "aliases": [
+        "GRPO"
+      ],
+      "path": "wiki/concepts/group-relative-policy-optimization.md"
+    },
+    {
+      "id": "grouped-query-attention",
+      "title": "Grouped-Query Attention",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [
+        "GQA",
+        "grouped multi-query attention"
+      ],
+      "path": "wiki/concepts/grouped-query-attention.md"
+    },
+    {
+      "id": "human-in-the-loop-agents",
+      "title": "Human-in-the-Loop Agents",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "safety"
+      ],
+      "aliases": [
+        "HITL",
+        "approval gate"
+      ],
+      "path": "wiki/concepts/human-in-the-loop-agents.md"
+    },
+    {
+      "id": "knowledge-distillation",
+      "title": "Knowledge Distillation",
+      "type": "concept",
+      "domains": [
+        "training",
+        "model-compression"
+      ],
+      "aliases": [
+        "teacher-student distillation"
+      ],
+      "path": "wiki/concepts/knowledge-distillation.md"
+    },
+    {
+      "id": "kv-cache",
+      "title": "KV Cache",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "transformer"
+      ],
+      "aliases": [
+        "key-value cache",
+        "attention cache"
+      ],
+      "path": "wiki/concepts/kv-cache.md"
+    },
+    {
+      "id": "llm-evaluation",
+      "title": "LLM Evaluation",
+      "type": "concept",
+      "domains": [
+        "evaluation",
+        "ai-engineering"
+      ],
+      "aliases": [
+        "LLM evals"
+      ],
+      "path": "wiki/concepts/llm-evaluation.md"
+    },
+    {
+      "id": "manifold-constrained-hyper-connections",
+      "title": "Manifold-Constrained Hyper-Connections",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "distributed-systems"
+      ],
+      "aliases": [
+        "mHC",
+        "hyper-connections"
+      ],
+      "path": "wiki/concepts/manifold-constrained-hyper-connections.md"
+    },
+    {
+      "id": "masked-language-modeling",
+      "title": "Masked Language Modeling",
+      "type": "concept",
+      "domains": [
+        "pretraining",
+        "model-architecture"
+      ],
+      "aliases": [
+        "MLM"
+      ],
+      "path": "wiki/concepts/masked-language-modeling.md"
+    },
+    {
+      "id": "mixed-precision-training",
+      "title": "Mixed-Precision Training",
+      "type": "concept",
+      "domains": [
+        "training",
+        "systems"
+      ],
+      "aliases": [
+        "BF16 training",
+        "FP16 training"
+      ],
+      "path": "wiki/concepts/mixed-precision-training.md"
+    },
+    {
+      "id": "mixture-of-experts",
+      "title": "Mixture of Experts",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "training",
+        "inference"
+      ],
+      "aliases": [
+        "MoE",
+        "sparse MoE"
+      ],
+      "path": "wiki/concepts/mixture-of-experts.md"
+    },
+    {
+      "id": "ml-generalization-and-regularization",
+      "title": "ML Generalization and Regularization",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "training"
+      ],
+      "aliases": [
+        "bias-variance tradeoff",
+        "weight decay"
+      ],
+      "path": "wiki/concepts/ml-generalization-and-regularization.md"
+    },
+    {
+      "id": "model-architecture-and-generation",
+      "title": "Model Architecture and Generation Map",
+      "type": "map",
+      "domains": [
+        "model-architecture",
+        "generative-models",
+        "multimodal"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/model-architecture-and-generation.md"
+    },
+    {
+      "id": "model-architecture-drills",
+      "title": "Model Architecture Drills",
+      "type": "interview",
+      "domains": [
+        "model-architecture",
+        "generative-models"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/model-architecture-drills.md"
+    },
+    {
+      "id": "model-context-protocol",
+      "title": "Model Context Protocol",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "integration"
+      ],
+      "aliases": [
+        "MCP"
+      ],
+      "path": "wiki/concepts/model-context-protocol.md"
+    },
+    {
+      "id": "model-quantization",
+      "title": "Model Quantization",
+      "type": "concept",
+      "domains": [
+        "model-compression",
+        "inference",
+        "training"
+      ],
+      "aliases": [
+        "INT8",
+        "FP8",
+        "low-precision inference"
+      ],
+      "path": "wiki/concepts/model-quantization.md"
+    },
+    {
+      "id": "multi-agent-orchestration",
+      "title": "Multi-Agent Orchestration",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "ai-engineering"
+      ],
+      "aliases": [
+        "agent teams",
+        "supervisor-worker agents"
+      ],
+      "path": "wiki/concepts/multi-agent-orchestration.md"
+    },
+    {
+      "id": "multi-head-latent-attention",
+      "title": "Multi-Head Latent Attention",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [
+        "MLA"
+      ],
+      "path": "wiki/concepts/multi-head-latent-attention.md"
+    },
+    {
+      "id": "multi-query-attention",
+      "title": "Multi-Query Attention",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [
+        "MQA"
+      ],
+      "path": "wiki/concepts/multi-query-attention.md"
+    },
+    {
+      "id": "multi-token-prediction",
+      "title": "Multi-Token Prediction",
+      "type": "concept",
+      "domains": [
+        "training",
+        "inference"
+      ],
+      "aliases": [
+        "MTP"
+      ],
+      "path": "wiki/concepts/multi-token-prediction.md"
+    },
+    {
+      "id": "multimodal-ai-systems",
+      "title": "Multimodal AI Systems",
+      "type": "concept",
+      "domains": [
+        "multimodal",
+        "applied-ai"
+      ],
+      "aliases": [
+        "vision-language system"
+      ],
+      "path": "wiki/concepts/multimodal-ai-systems.md"
+    },
+    {
+      "id": "paged-attention",
+      "title": "Paged Attention",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "serving"
+      ],
+      "aliases": [
+        "PagedAttention"
+      ],
+      "path": "wiki/concepts/paged-attention.md"
+    },
+    {
+      "id": "pc-algorithm",
+      "title": "PC Algorithm",
+      "type": "concept",
+      "domains": [
+        "causal-ml"
+      ],
+      "aliases": [
+        "Peter-Clark algorithm"
+      ],
+      "path": "wiki/concepts/pc-algorithm.md"
+    },
+    {
+      "id": "pipeline-parallelism",
+      "title": "Pipeline Parallelism",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "training"
+      ],
+      "aliases": [
+        "PP"
+      ],
+      "path": "wiki/concepts/pipeline-parallelism.md"
+    },
+    {
+      "id": "policy-gradient",
+      "title": "Policy Gradient",
+      "type": "concept",
+      "domains": [
+        "reinforcement-learning",
+        "post-training"
+      ],
+      "aliases": [
+        "REINFORCE"
+      ],
+      "path": "wiki/concepts/policy-gradient.md"
+    },
+    {
+      "id": "post-training-and-alignment",
+      "title": "Post-Training and Alignment Map",
+      "type": "map",
+      "domains": [
+        "post-training",
+        "alignment",
+        "reasoning"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/post-training-and-alignment.md"
+    },
+    {
+      "id": "post-training-drills",
+      "title": "Post-Training and Alignment Drills",
+      "type": "interview",
+      "domains": [
+        "post-training",
+        "alignment"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/post-training-drills.md"
+    },
+    {
+      "id": "pretraining",
+      "title": "Language-Model Pretraining",
+      "type": "concept",
+      "domains": [
+        "training",
+        "pretraining"
+      ],
+      "aliases": [
+        "foundation-model training"
+      ],
+      "path": "wiki/concepts/pretraining.md"
+    },
+    {
+      "id": "probabilistic-objectives",
+      "title": "Probabilistic Objectives",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "training"
+      ],
+      "aliases": [
+        "maximum likelihood estimation",
+        "MLE",
+        "KL divergence"
+      ],
+      "path": "wiki/concepts/probabilistic-objectives.md"
+    },
+    {
+      "id": "prompt-caching",
+      "title": "Prompt Caching",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "serving"
+      ],
+      "aliases": [
+        "prefix caching",
+        "prefix cache"
+      ],
+      "path": "wiki/concepts/prompt-caching.md"
+    },
+    {
+      "id": "proximal-policy-optimization",
+      "title": "Proximal Policy Optimization",
+      "type": "concept",
+      "domains": [
+        "reinforcement-learning",
+        "post-training"
+      ],
+      "aliases": [
+        "PPO"
+      ],
+      "path": "wiki/concepts/proximal-policy-optimization.md"
+    },
+    {
+      "id": "radix-attention",
+      "title": "Radix Attention",
+      "type": "concept",
+      "domains": [
+        "inference",
+        "serving"
+      ],
+      "aliases": [
+        "RadixAttention"
+      ],
+      "path": "wiki/concepts/radix-attention.md"
+    },
+    {
+      "id": "reinforcement-learning",
+      "title": "Reinforcement Learning",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "post-training"
+      ],
+      "aliases": [
+        "RL"
+      ],
+      "path": "wiki/concepts/reinforcement-learning.md"
+    },
+    {
+      "id": "residual-network",
+      "title": "Residual Networks",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "training"
+      ],
+      "aliases": [
+        "ResNet",
+        "residual connection"
+      ],
+      "path": "wiki/concepts/residual-network.md"
+    },
+    {
+      "id": "responsible-synthetic-personas",
+      "title": "Responsible Synthetic Personas",
+      "type": "concept",
+      "domains": [
+        "multimodal",
+        "safety",
+        "applied-ai"
+      ],
+      "aliases": [
+        "digital persona safety",
+        "voice-clone safety"
+      ],
+      "path": "wiki/concepts/responsible-synthetic-personas.md"
+    },
+    {
+      "id": "retrieval-and-agent-systems",
+      "title": "Retrieval and Agent Systems Map",
+      "type": "map",
+      "domains": [
+        "retrieval",
+        "agent-systems",
+        "ai-engineering"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/retrieval-and-agent-systems.md"
+    },
+    {
+      "id": "retrieval-augmented-generation",
+      "title": "Retrieval-Augmented Generation",
+      "type": "concept",
+      "domains": [
+        "retrieval",
+        "agent-systems"
+      ],
+      "aliases": [
+        "RAG"
+      ],
+      "path": "wiki/concepts/retrieval-augmented-generation.md"
+    },
+    {
+      "id": "reward-modeling",
+      "title": "Reward Modeling",
+      "type": "concept",
+      "domains": [
+        "post-training",
+        "evaluation"
+      ],
+      "aliases": [
+        "preference model",
+        "reward model"
+      ],
+      "path": "wiki/concepts/reward-modeling.md"
+    },
+    {
+      "id": "rlhf",
+      "title": "Reinforcement Learning from Human Feedback",
+      "type": "concept",
+      "domains": [
+        "post-training",
+        "alignment"
+      ],
+      "aliases": [
+        "RLHF"
+      ],
+      "path": "wiki/concepts/rlhf.md"
+    },
+    {
+      "id": "root-cause-analysis",
+      "title": "AI-Assisted Root Cause Analysis",
+      "type": "concept",
+      "domains": [
+        "applied-ml",
+        "agent-systems",
+        "observability"
+      ],
+      "aliases": [
+        "RCA agent"
+      ],
+      "path": "wiki/concepts/root-cause-analysis.md"
+    },
+    {
+      "id": "rotary-position-embedding",
+      "title": "Rotary Position Embedding",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [
+        "RoPE",
+        "rotary embedding"
+      ],
+      "path": "wiki/concepts/rotary-position-embedding.md"
+    },
+    {
+      "id": "search-and-a-star",
+      "title": "Search and A*",
+      "type": "concept",
+      "domains": [
+        "foundations"
+      ],
+      "aliases": [
+        "A-star search",
+        "graph search"
+      ],
+      "path": "wiki/concepts/search-and-a-star.md"
+    },
+    {
+      "id": "self-attention",
+      "title": "Self-Attention",
+      "type": "concept",
+      "domains": [
+        "model-architecture"
+      ],
+      "aliases": [
+        "scaled dot-product attention"
+      ],
+      "path": "wiki/concepts/self-attention.md"
+    },
+    {
+      "id": "sentence-embeddings",
+      "title": "Sentence Embeddings",
+      "type": "concept",
+      "domains": [
+        "retrieval",
+        "representation-learning"
+      ],
+      "aliases": [
+        "semantic embeddings",
+        "Sentence-BERT"
+      ],
+      "path": "wiki/concepts/sentence-embeddings.md"
+    },
+    {
+      "id": "sparse-representations",
+      "title": "Sparse Representations",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "systems"
+      ],
+      "aliases": [
+        "sparse matrix"
+      ],
+      "path": "wiki/concepts/sparse-representations.md"
+    },
+    {
+      "id": "spectral-residual-cnn",
+      "title": "Spectral Residual CNN",
+      "type": "concept",
+      "domains": [
+        "applied-ml",
+        "anomaly-detection"
+      ],
+      "aliases": [
+        "SR-CNN"
+      ],
+      "path": "wiki/concepts/spectral-residual-cnn.md"
+    },
+    {
+      "id": "speculative-decoding",
+      "title": "Speculative Decoding",
+      "type": "concept",
+      "domains": [
+        "inference"
+      ],
+      "aliases": [
+        "speculative sampling"
+      ],
+      "path": "wiki/concepts/speculative-decoding.md"
+    },
+    {
+      "id": "supervised-fine-tuning",
+      "title": "Supervised Fine-Tuning",
+      "type": "concept",
+      "domains": [
+        "training",
+        "post-training"
+      ],
+      "aliases": [
+        "SFT",
+        "instruction tuning"
+      ],
+      "path": "wiki/concepts/supervised-fine-tuning.md"
+    },
+    {
+      "id": "temporal-difference-learning",
+      "title": "Temporal-Difference Learning",
+      "type": "concept",
+      "domains": [
+        "foundations",
+        "reinforcement-learning"
+      ],
+      "aliases": [
+        "TD learning",
+        "Q-learning",
+        "SARSA"
+      ],
+      "path": "wiki/concepts/temporal-difference-learning.md"
+    },
+    {
+      "id": "tensor-parallelism",
+      "title": "Tensor Parallelism",
+      "type": "concept",
+      "domains": [
+        "distributed-systems",
+        "inference",
+        "training"
+      ],
+      "aliases": [
+        "TP"
+      ],
+      "path": "wiki/concepts/tensor-parallelism.md"
+    },
+    {
+      "id": "time-series-anomaly-detection",
+      "title": "Time-Series Anomaly Detection",
+      "type": "concept",
+      "domains": [
+        "applied-ml",
+        "evaluation"
+      ],
+      "aliases": [
+        "KPI anomaly detection"
+      ],
+      "path": "wiki/concepts/time-series-anomaly-detection.md"
+    },
+    {
+      "id": "tool-use-function-calling",
+      "title": "Tool Use and Function Calling",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "ai-engineering"
+      ],
+      "aliases": [
+        "function calling",
+        "tool calling"
+      ],
+      "path": "wiki/concepts/tool-use-function-calling.md"
+    },
+    {
+      "id": "transformer-architecture",
+      "title": "Transformer Architecture",
+      "type": "concept",
+      "domains": [
+        "model-architecture",
+        "inference"
+      ],
+      "aliases": [
+        "transformer"
+      ],
+      "path": "wiki/concepts/transformer-architecture.md"
+    },
+    {
+      "id": "transformer-inference",
+      "title": "Transformer Inference Map",
+      "type": "map",
+      "domains": [
+        "inference",
+        "model-architecture",
+        "serving"
+      ],
+      "aliases": [],
+      "path": "wiki/maps/transformer-inference.md"
+    },
+    {
+      "id": "transformer-inference-drills",
+      "title": "Transformer Inference Drills",
+      "type": "interview",
+      "domains": [
+        "inference",
+        "serving"
+      ],
+      "aliases": [],
+      "path": "wiki/interview/transformer-inference-drills.md"
+    },
+    {
+      "id": "vae-lof-anomaly-detection",
+      "title": "VAE–LOF Anomaly Detection",
+      "type": "concept",
+      "domains": [
+        "applied-ml",
+        "anomaly-detection"
+      ],
+      "aliases": [
+        "LOF-VAE"
+      ],
+      "path": "wiki/concepts/vae-lof-anomaly-detection.md"
+    },
+    {
+      "id": "variational-autoencoder",
+      "title": "Variational Autoencoder",
+      "type": "concept",
+      "domains": [
+        "generative-models",
+        "applied-ml"
+      ],
+      "aliases": [
+        "VAE"
+      ],
+      "path": "wiki/concepts/variational-autoencoder.md"
+    },
+    {
+      "id": "vector-database",
+      "title": "Vector Databases and HNSW",
+      "type": "concept",
+      "domains": [
+        "retrieval",
+        "systems"
+      ],
+      "aliases": [
+        "vector store",
+        "HNSW",
+        "approximate nearest-neighbor search"
+      ],
+      "path": "wiki/concepts/vector-database.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent-loop",
+      "target": "human-in-the-loop-agents",
+      "type": "enables"
+    },
+    {
+      "source": "agent-loop",
+      "target": "multi-agent-orchestration",
+      "type": "enables"
+    },
+    {
+      "source": "agent-loop",
+      "target": "tool-use-function-calling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "agent-memory",
+      "target": "context-compaction",
+      "type": "optimized_by"
+    },
+    {
+      "source": "agent-memory",
+      "target": "retrieval-augmented-generation",
+      "type": "prerequisites"
+    },
+    {
+      "source": "agent-safety-boundaries",
+      "target": "agent-loop",
+      "type": "affects"
+    },
+    {
+      "source": "agent-safety-boundaries",
+      "target": "human-in-the-loop-agents",
+      "type": "prerequisites"
+    },
+    {
+      "source": "agent-safety-boundaries",
+      "target": "tool-use-function-calling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "agent-systems-drills",
+      "target": "retrieval-and-agent-systems",
+      "type": "prerequisites"
+    },
+    {
+      "source": "alignment-methods",
+      "target": "policy-gradient",
+      "type": "prerequisites"
+    },
+    {
+      "source": "alignment-methods",
+      "target": "reward-modeling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "alignment-methods",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "applied-ai-and-evaluation",
+      "target": "foundations",
+      "type": "prerequisites"
+    },
+    {
+      "source": "applied-ai-drills",
+      "target": "applied-ai-and-evaluation",
+      "type": "prerequisites"
+    },
+    {
+      "source": "attention-cache-strategies",
+      "target": "kv-cache",
+      "type": "prerequisites"
+    },
+    {
+      "source": "attention-cache-strategies",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "bayesian-networks",
+      "target": "causal-structure-learning",
+      "type": "enables"
+    },
+    {
+      "source": "bayesian-networks",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "bert",
+      "target": "sentence-embeddings",
+      "type": "implemented_in"
+    },
+    {
+      "source": "bert",
+      "target": "masked-language-modeling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "bert",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "causal-attention",
+      "target": "kv-cache",
+      "type": "enables"
+    },
+    {
+      "source": "causal-attention",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
+      "source": "causal-attention",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "causal-structure-learning",
+      "target": "greedy-equivalence-search",
+      "type": "implemented_in"
+    },
+    {
+      "source": "causal-structure-learning",
+      "target": "pc-algorithm",
+      "type": "implemented_in"
+    },
+    {
+      "source": "causal-structure-learning",
+      "target": "bayesian-networks",
+      "type": "prerequisites"
+    },
+    {
+      "source": "causal-structure-learning",
+      "target": "root-cause-analysis",
+      "type": "used_by"
+    },
+    {
+      "source": "chain-of-thought-reasoning",
+      "target": "knowledge-distillation",
+      "type": "affects"
+    },
+    {
+      "source": "chain-of-thought-reasoning",
+      "target": "llm-evaluation",
+      "type": "affects"
+    },
+    {
+      "source": "chain-of-thought-reasoning",
+      "target": "reinforcement-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "chain-of-thought-reasoning",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "classical-ml-methods",
+      "target": "time-series-anomaly-detection",
+      "type": "enables"
+    },
+    {
+      "source": "context-compaction",
+      "target": "agent-loop",
+      "type": "affects"
+    },
+    {
+      "source": "context-compaction",
+      "target": "agent-memory",
+      "type": "prerequisites"
+    },
+    {
+      "source": "contrastive-language-image-pretraining",
+      "target": "diffusion-model",
+      "type": "enables"
+    },
+    {
+      "source": "contrastive-language-image-pretraining",
+      "target": "multimodal-ai-systems",
+      "type": "enables"
+    },
+    {
+      "source": "contrastive-language-image-pretraining",
+      "target": "encoder-decoder",
+      "type": "prerequisites"
+    },
+    {
+      "source": "data-parallelism",
+      "target": "fully-sharded-data-parallelism",
+      "type": "enables"
+    },
+    {
+      "source": "data-parallelism",
+      "target": "pretraining",
+      "type": "prerequisites"
+    },
+    {
+      "source": "decoding-sampling-strategies",
+      "target": "llm-evaluation",
+      "type": "affects"
+    },
+    {
+      "source": "decoding-sampling-strategies",
+      "target": "causal-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "diffusion-model",
+      "target": "generative-adversarial-network",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "diffusion-model",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "diffusion-model",
+      "target": "multimodal-ai-systems",
+      "type": "used_by"
+    },
+    {
+      "source": "direct-preference-optimization",
+      "target": "group-relative-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "direct-preference-optimization",
+      "target": "proximal-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "direct-preference-optimization",
+      "target": "reward-modeling",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "direct-preference-optimization",
+      "target": "rlhf",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "direct-preference-optimization",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "direct-preference-optimization",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "distributed-systems-drills",
+      "target": "distributed-training-and-mlops",
+      "type": "prerequisites"
+    },
+    {
+      "source": "distributed-training-and-mlops",
+      "target": "pretraining",
+      "type": "prerequisites"
+    },
+    {
+      "source": "distributed-training-and-mlops",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "dynamic-sparse-attention",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "dynamic-sparse-attention",
+      "target": "multi-head-latent-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "dynamic-sparse-attention",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "encoder-decoder",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
+      "source": "encoder-decoder",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "engram-conditional-memory",
+      "target": "mixture-of-experts",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "engram-conditional-memory",
+      "target": "sparse-representations",
+      "type": "prerequisites"
+    },
+    {
+      "source": "engram-conditional-memory",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "event-driven-agent-architecture",
+      "target": "multi-agent-orchestration",
+      "type": "enables"
+    },
+    {
+      "source": "event-driven-agent-architecture",
+      "target": "agent-loop",
+      "type": "prerequisites"
+    },
+    {
+      "source": "expert-parallelism",
+      "target": "mixture-of-experts",
+      "type": "part_of"
+    },
+    {
+      "source": "expert-parallelism",
+      "target": "mixture-of-experts",
+      "type": "prerequisites"
+    },
+    {
+      "source": "foundations",
+      "target": "causal-structure-learning",
+      "type": "enables"
+    },
+    {
+      "source": "foundations",
+      "target": "pretraining",
+      "type": "enables"
+    },
+    {
+      "source": "foundations-drills",
+      "target": "foundations",
+      "type": "prerequisites"
+    },
+    {
+      "source": "fully-sharded-data-parallelism",
+      "target": "tensor-parallelism",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "fully-sharded-data-parallelism",
+      "target": "data-parallelism",
+      "type": "prerequisites"
+    },
+    {
+      "source": "generalized-advantage-estimation",
+      "target": "policy-gradient",
+      "type": "prerequisites"
+    },
+    {
+      "source": "generalized-advantage-estimation",
+      "target": "temporal-difference-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "generalized-advantage-estimation",
+      "target": "proximal-policy-optimization",
+      "type": "used_by"
+    },
+    {
+      "source": "generative-adversarial-network",
+      "target": "diffusion-model",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "generative-adversarial-network",
+      "target": "variational-autoencoder",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "generative-adversarial-network",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "graph-neural-network",
+      "target": "transformer-architecture",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "graph-neural-network",
+      "target": "ml-generalization-and-regularization",
+      "type": "prerequisites"
+    },
+    {
+      "source": "greedy-equivalence-search",
+      "target": "pc-algorithm",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "greedy-equivalence-search",
+      "target": "causal-structure-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "greedy-equivalence-search",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "group-relative-policy-optimization",
+      "target": "direct-preference-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "group-relative-policy-optimization",
+      "target": "proximal-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "group-relative-policy-optimization",
+      "target": "rlhf",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "group-relative-policy-optimization",
+      "target": "policy-gradient",
+      "type": "prerequisites"
+    },
+    {
+      "source": "group-relative-policy-optimization",
+      "target": "reward-modeling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "grouped-query-attention",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "grouped-query-attention",
+      "target": "multi-head-latent-attention",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "grouped-query-attention",
+      "target": "multi-query-attention",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "grouped-query-attention",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "human-in-the-loop-agents",
+      "target": "multi-agent-orchestration",
+      "type": "affects"
+    },
+    {
+      "source": "human-in-the-loop-agents",
+      "target": "tool-use-function-calling",
+      "type": "affects"
+    },
+    {
+      "source": "human-in-the-loop-agents",
+      "target": "agent-loop",
+      "type": "prerequisites"
+    },
+    {
+      "source": "knowledge-distillation",
+      "target": "model-quantization",
+      "type": "enables"
+    },
+    {
+      "source": "knowledge-distillation",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "kv-cache",
+      "target": "grouped-query-attention",
+      "type": "optimized_by"
+    },
+    {
+      "source": "kv-cache",
+      "target": "multi-head-latent-attention",
+      "type": "optimized_by"
+    },
+    {
+      "source": "kv-cache",
+      "target": "multi-query-attention",
+      "type": "optimized_by"
+    },
+    {
+      "source": "kv-cache",
+      "target": "paged-attention",
+      "type": "optimized_by"
+    },
+    {
+      "source": "kv-cache",
+      "target": "causal-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "llm-evaluation",
+      "target": "pretraining",
+      "type": "affects"
+    },
+    {
+      "source": "llm-evaluation",
+      "target": "retrieval-augmented-generation",
+      "type": "affects"
+    },
+    {
+      "source": "llm-evaluation",
+      "target": "rlhf",
+      "type": "affects"
+    },
+    {
+      "source": "llm-evaluation",
+      "target": "supervised-fine-tuning",
+      "type": "affects"
+    },
+    {
+      "source": "manifold-constrained-hyper-connections",
+      "target": "pipeline-parallelism",
+      "type": "affects"
+    },
+    {
+      "source": "manifold-constrained-hyper-connections",
+      "target": "residual-network",
+      "type": "prerequisites"
+    },
+    {
+      "source": "masked-language-modeling",
+      "target": "bert",
+      "type": "enables"
+    },
+    {
+      "source": "masked-language-modeling",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "mixed-precision-training",
+      "target": "model-quantization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "mixed-precision-training",
+      "target": "ml-generalization-and-regularization",
+      "type": "prerequisites"
+    },
+    {
+      "source": "mixture-of-experts",
+      "target": "engram-conditional-memory",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "mixture-of-experts",
+      "target": "expert-parallelism",
+      "type": "optimized_by"
+    },
+    {
+      "source": "mixture-of-experts",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "ml-generalization-and-regularization",
+      "target": "pretraining",
+      "type": "affects"
+    },
+    {
+      "source": "ml-generalization-and-regularization",
+      "target": "supervised-fine-tuning",
+      "type": "affects"
+    },
+    {
+      "source": "model-architecture-and-generation",
+      "target": "foundations",
+      "type": "prerequisites"
+    },
+    {
+      "source": "model-architecture-and-generation",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "model-architecture-drills",
+      "target": "model-architecture-and-generation",
+      "type": "prerequisites"
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "multimodal-ai-systems",
+      "type": "enables"
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "retrieval-augmented-generation",
+      "type": "enables"
+    },
+    {
+      "source": "model-context-protocol",
+      "target": "tool-use-function-calling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "model-quantization",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "model-quantization",
+      "target": "mixed-precision-training",
+      "type": "affects"
+    },
+    {
+      "source": "model-quantization",
+      "target": "mixed-precision-training",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "multi-agent-orchestration",
+      "target": "human-in-the-loop-agents",
+      "type": "optimized_by"
+    },
+    {
+      "source": "multi-agent-orchestration",
+      "target": "agent-loop",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multi-agent-orchestration",
+      "target": "tool-use-function-calling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multi-head-latent-attention",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "multi-head-latent-attention",
+      "target": "grouped-query-attention",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "multi-head-latent-attention",
+      "target": "multi-query-attention",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "multi-head-latent-attention",
+      "target": "rotary-position-embedding",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multi-head-latent-attention",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multi-query-attention",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "multi-query-attention",
+      "target": "grouped-query-attention",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "multi-query-attention",
+      "target": "multi-head-latent-attention",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "multi-query-attention",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multi-token-prediction",
+      "target": "speculative-decoding",
+      "type": "enables"
+    },
+    {
+      "source": "multi-token-prediction",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multimodal-ai-systems",
+      "target": "contrastive-language-image-pretraining",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multimodal-ai-systems",
+      "target": "diffusion-model",
+      "type": "prerequisites"
+    },
+    {
+      "source": "multimodal-ai-systems",
+      "target": "responsible-synthetic-personas",
+      "type": "used_by"
+    },
+    {
+      "source": "paged-attention",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "paged-attention",
+      "target": "prompt-caching",
+      "type": "part_of"
+    },
+    {
+      "source": "paged-attention",
+      "target": "kv-cache",
+      "type": "prerequisites"
+    },
+    {
+      "source": "pc-algorithm",
+      "target": "greedy-equivalence-search",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "pc-algorithm",
+      "target": "causal-structure-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "pipeline-parallelism",
+      "target": "manifold-constrained-hyper-connections",
+      "type": "affects"
+    },
+    {
+      "source": "pipeline-parallelism",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "policy-gradient",
+      "target": "proximal-policy-optimization",
+      "type": "enables"
+    },
+    {
+      "source": "policy-gradient",
+      "target": "rlhf",
+      "type": "enables"
+    },
+    {
+      "source": "policy-gradient",
+      "target": "reinforcement-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "post-training-and-alignment",
+      "target": "foundations",
+      "type": "prerequisites"
+    },
+    {
+      "source": "post-training-and-alignment",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "post-training-drills",
+      "target": "post-training-and-alignment",
+      "type": "prerequisites"
+    },
+    {
+      "source": "pretraining",
+      "target": "supervised-fine-tuning",
+      "type": "enables"
+    },
+    {
+      "source": "pretraining",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "pretraining",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "probabilistic-objectives",
+      "target": "reward-modeling",
+      "type": "enables"
+    },
+    {
+      "source": "probabilistic-objectives",
+      "target": "variational-autoencoder",
+      "type": "enables"
+    },
+    {
+      "source": "prompt-caching",
+      "target": "paged-attention",
+      "type": "implemented_in"
+    },
+    {
+      "source": "prompt-caching",
+      "target": "radix-attention",
+      "type": "implemented_in"
+    },
+    {
+      "source": "prompt-caching",
+      "target": "kv-cache",
+      "type": "prerequisites"
+    },
+    {
+      "source": "proximal-policy-optimization",
+      "target": "direct-preference-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "proximal-policy-optimization",
+      "target": "group-relative-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "proximal-policy-optimization",
+      "target": "generalized-advantage-estimation",
+      "type": "prerequisites"
+    },
+    {
+      "source": "proximal-policy-optimization",
+      "target": "policy-gradient",
+      "type": "prerequisites"
+    },
+    {
+      "source": "proximal-policy-optimization",
+      "target": "reward-modeling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "proximal-policy-optimization",
+      "target": "rlhf",
+      "type": "used_by"
+    },
+    {
+      "source": "radix-attention",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "radix-attention",
+      "target": "prompt-caching",
+      "type": "part_of"
+    },
+    {
+      "source": "radix-attention",
+      "target": "kv-cache",
+      "type": "prerequisites"
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "policy-gradient",
+      "type": "enables"
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "rlhf",
+      "type": "enables"
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "temporal-difference-learning",
+      "type": "enables"
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "residual-network",
+      "target": "manifold-constrained-hyper-connections",
+      "type": "enables"
+    },
+    {
+      "source": "residual-network",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
+      "source": "responsible-synthetic-personas",
+      "target": "agent-safety-boundaries",
+      "type": "affects"
+    },
+    {
+      "source": "responsible-synthetic-personas",
+      "target": "human-in-the-loop-agents",
+      "type": "prerequisites"
+    },
+    {
+      "source": "responsible-synthetic-personas",
+      "target": "multimodal-ai-systems",
+      "type": "prerequisites"
+    },
+    {
+      "source": "retrieval-and-agent-systems",
+      "target": "root-cause-analysis",
+      "type": "enables"
+    },
+    {
+      "source": "retrieval-and-agent-systems",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "retrieval-augmented-generation",
+      "target": "sentence-embeddings",
+      "type": "prerequisites"
+    },
+    {
+      "source": "retrieval-augmented-generation",
+      "target": "vector-database",
+      "type": "prerequisites"
+    },
+    {
+      "source": "retrieval-augmented-generation",
+      "target": "agent-memory",
+      "type": "used_by"
+    },
+    {
+      "source": "retrieval-augmented-generation",
+      "target": "root-cause-analysis",
+      "type": "used_by"
+    },
+    {
+      "source": "reward-modeling",
+      "target": "direct-preference-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "reward-modeling",
+      "target": "proximal-policy-optimization",
+      "type": "enables"
+    },
+    {
+      "source": "reward-modeling",
+      "target": "rlhf",
+      "type": "enables"
+    },
+    {
+      "source": "reward-modeling",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "reward-modeling",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "rlhf",
+      "target": "direct-preference-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "rlhf",
+      "target": "group-relative-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "rlhf",
+      "target": "proximal-policy-optimization",
+      "type": "prerequisites"
+    },
+    {
+      "source": "rlhf",
+      "target": "reward-modeling",
+      "type": "prerequisites"
+    },
+    {
+      "source": "rlhf",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "root-cause-analysis",
+      "target": "event-driven-agent-architecture",
+      "type": "implemented_in"
+    },
+    {
+      "source": "root-cause-analysis",
+      "target": "agent-loop",
+      "type": "prerequisites"
+    },
+    {
+      "source": "root-cause-analysis",
+      "target": "causal-structure-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "root-cause-analysis",
+      "target": "retrieval-augmented-generation",
+      "type": "prerequisites"
+    },
+    {
+      "source": "rotary-position-embedding",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "rotary-position-embedding",
+      "target": "multi-head-latent-attention",
+      "type": "affects"
+    },
+    {
+      "source": "rotary-position-embedding",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
+      "source": "search-and-a-star",
+      "target": "agent-loop",
+      "type": "enables"
+    },
+    {
+      "source": "self-attention",
+      "target": "causal-attention",
+      "type": "enables"
+    },
+    {
+      "source": "self-attention",
+      "target": "transformer-architecture",
+      "type": "part_of"
+    },
+    {
+      "source": "sentence-embeddings",
+      "target": "retrieval-augmented-generation",
+      "type": "enables"
+    },
+    {
+      "source": "sentence-embeddings",
+      "target": "vector-database",
+      "type": "enables"
+    },
+    {
+      "source": "sentence-embeddings",
+      "target": "bert",
+      "type": "prerequisites"
+    },
+    {
+      "source": "sparse-representations",
+      "target": "mixture-of-experts",
+      "type": "enables"
+    },
+    {
+      "source": "sparse-representations",
+      "target": "vector-database",
+      "type": "enables"
+    },
+    {
+      "source": "spectral-residual-cnn",
+      "target": "vae-lof-anomaly-detection",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "spectral-residual-cnn",
+      "target": "time-series-anomaly-detection",
+      "type": "prerequisites"
+    },
+    {
+      "source": "speculative-decoding",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "speculative-decoding",
+      "target": "causal-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "supervised-fine-tuning",
+      "target": "direct-preference-optimization",
+      "type": "enables"
+    },
+    {
+      "source": "supervised-fine-tuning",
+      "target": "rlhf",
+      "type": "enables"
+    },
+    {
+      "source": "supervised-fine-tuning",
+      "target": "pretraining",
+      "type": "prerequisites"
+    },
+    {
+      "source": "temporal-difference-learning",
+      "target": "generalized-advantage-estimation",
+      "type": "enables"
+    },
+    {
+      "source": "temporal-difference-learning",
+      "target": "reinforcement-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "tensor-parallelism",
+      "target": "kv-cache",
+      "type": "affects"
+    },
+    {
+      "source": "tensor-parallelism",
+      "target": "fully-sharded-data-parallelism",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "tensor-parallelism",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "time-series-anomaly-detection",
+      "target": "spectral-residual-cnn",
+      "type": "implemented_in"
+    },
+    {
+      "source": "time-series-anomaly-detection",
+      "target": "vae-lof-anomaly-detection",
+      "type": "implemented_in"
+    },
+    {
+      "source": "time-series-anomaly-detection",
+      "target": "classical-ml-methods",
+      "type": "prerequisites"
+    },
+    {
+      "source": "tool-use-function-calling",
+      "target": "agent-loop",
+      "type": "enables"
+    },
+    {
+      "source": "tool-use-function-calling",
+      "target": "model-context-protocol",
+      "type": "enables"
+    },
+    {
+      "source": "tool-use-function-calling",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "transformer-architecture",
+      "target": "graph-neural-network",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "transformer-architecture",
+      "target": "causal-attention",
+      "type": "enables"
+    },
+    {
+      "source": "transformer-architecture",
+      "target": "kv-cache",
+      "type": "enables"
+    },
+    {
+      "source": "transformer-architecture",
+      "target": "self-attention",
+      "type": "prerequisites"
+    },
+    {
+      "source": "transformer-inference",
+      "target": "transformer-architecture",
+      "type": "prerequisites"
+    },
+    {
+      "source": "transformer-inference-drills",
+      "target": "transformer-inference",
+      "type": "prerequisites"
+    },
+    {
+      "source": "vae-lof-anomaly-detection",
+      "target": "spectral-residual-cnn",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "vae-lof-anomaly-detection",
+      "target": "time-series-anomaly-detection",
+      "type": "prerequisites"
+    },
+    {
+      "source": "vae-lof-anomaly-detection",
+      "target": "variational-autoencoder",
+      "type": "prerequisites"
+    },
+    {
+      "source": "variational-autoencoder",
+      "target": "generative-adversarial-network",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "variational-autoencoder",
+      "target": "diffusion-model",
+      "type": "enables"
+    },
+    {
+      "source": "variational-autoencoder",
+      "target": "vae-lof-anomaly-detection",
+      "type": "enables"
+    },
+    {
+      "source": "variational-autoencoder",
+      "target": "probabilistic-objectives",
+      "type": "prerequisites"
+    },
+    {
+      "source": "vector-database",
+      "target": "retrieval-augmented-generation",
+      "type": "enables"
+    },
+    {
+      "source": "vector-database",
+      "target": "sentence-embeddings",
+      "type": "prerequisites"
+    },
+    {
+      "source": "vector-database",
+      "target": "sparse-representations",
+      "type": "prerequisites"
+    }
+  ]
+}

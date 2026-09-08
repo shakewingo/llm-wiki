@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "path:wiki [domains:]",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "[type:map]",
+      "color": {
+        "a": 1,
+        "rgb": 5404128
+      }
+    },
+    {
+      "query": "[type:concept]",
+      "color": {
+        "a": 1,
+        "rgb": 15310087
+      }
+    },
+    {
+      "query": "[type:comparison]",
+      "color": {
+        "a": 1,
+        "rgb": 10545930
+      }
+    },
+    {
+      "query": "[type:interview]",
+      "color": {
+        "a": 1,
+        "rgb": 14701145
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.5027491241319682,
+  "close": false
+}
