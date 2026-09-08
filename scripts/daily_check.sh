@@ -29,14 +29,14 @@ echo "=== git sync ==="
 if [ -n "$(git status --porcelain)" ]; then
     git add -A
     git commit -m "chore: daily wiki sync $(date -u +%Y-%m-%dT%H:%M:%SZ)" >/dev/null
-    git push origin main
+    git push origin main 2>/dev/null
     echo "pushed: local changes committed and pushed to origin/main"
 else
     # Still push in case a prior commit exists locally but wasn't pushed.
     LOCAL=$(git rev-parse main)
     REMOTE=$(git rev-parse origin/main 2>/dev/null || echo "")
     if [ "$LOCAL" != "$REMOTE" ]; then
-        git push origin main
+        git push origin main 2>/dev/null
         echo "pushed: local main was ahead of origin/main"
     else
         echo "no-op: no local changes, nothing to push"
