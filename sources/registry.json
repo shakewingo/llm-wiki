@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T13:30:21.799449+00:00",
+  "generated_at": "2026-09-10T01:06:57.718683+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -992,15 +992,16 @@
       "slug": "vcfpoozzs1sq97f4",
       "title": "Python",
       "url": "https://www.yuque.com/shakewin/aqegd7/vcfpoozzs1sq97f4",
-      "content_updated_at": "2026-08-29T07:13:55.000Z",
-      "latest_version_id": 4026030035,
-      "last_ingested_version": null,
+      "content_updated_at": "2026-09-09T15:29:42.000Z",
+      "latest_version_id": 4041906709,
+      "last_ingested_version": 4041906709,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 384
+      "word_count": 384,
+      "last_ingested_at": "2026-09-10T01:06:57.718611+00:00"
     },
     {
       "source_id": "yuque:249024774",
