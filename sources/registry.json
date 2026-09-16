@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10T01:06:57.718683+00:00",
+  "generated_at": "2026-09-15T01:11:31.622536+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -1000,8 +1000,7 @@
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 384,
-      "last_ingested_at": "2026-09-10T01:06:57.718611+00:00"
+      "word_count": 431
     },
     {
       "source_id": "yuque:249024774",
@@ -1558,15 +1557,71 @@
       "slug": "dt5ggqmqqd64t6o5",
       "title": "Agent Architecture",
       "url": "https://www.yuque.com/shakewin/xhs6fk/dt5ggqmqqd64t6o5",
-      "content_updated_at": "2026-09-08T08:18:02.000Z",
-      "latest_version_id": 4039691854,
+      "content_updated_at": "2026-09-13T11:57:01.000Z",
+      "latest_version_id": 4046388204,
       "last_ingested_version": null,
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 3
+      "word_count": 0
+    },
+    {
+      "source_id": "yuque:285007740",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "armkhqt7dpl4g9ck",
+      "title": "Agent from scratch",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/armkhqt7dpl4g9ck",
+      "content_updated_at": "2026-09-14T09:16:59.000Z",
+      "latest_version_id": 4047767972,
+      "last_ingested_version": 4047767972,
+      "scope": "unreviewed",
+      "scope_reason": "Content must be reviewed before inclusion.",
+      "concepts": [],
+      "public": false,
+      "status": 1,
+      "word_count": 2580,
+      "last_ingested_at": "2026-09-15T01:11:31.622494+00:00"
+    },
+    {
+      "source_id": "yuque:285017089",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "xe45o3wk5rn68fb9",
+      "title": "Harness Book",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/xe45o3wk5rn68fb9",
+      "content_updated_at": "2026-09-14T08:50:06.000Z",
+      "latest_version_id": 4047695530,
+      "last_ingested_version": 4047695530,
+      "scope": "unreviewed",
+      "scope_reason": "Content must be reviewed before inclusion.",
+      "concepts": [],
+      "public": false,
+      "status": 1,
+      "word_count": 4304,
+      "last_ingested_at": "2026-09-15T01:11:31.622531+00:00"
+    },
+    {
+      "source_id": "yuque:285020362",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "bug51rs5cgnso4u6",
+      "title": "Agent Arch Comparison",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/bug51rs5cgnso4u6",
+      "content_updated_at": "2026-09-13T11:57:00.000Z",
+      "latest_version_id": 4046388231,
+      "last_ingested_version": null,
+      "scope": "excluded",
+      "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
+      "concepts": [],
+      "public": false,
+      "status": 1,
+      "word_count": 0
     }
   ]
 }
