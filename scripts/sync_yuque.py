@@ -76,6 +76,7 @@ EXCLUDED_TITLES = {
     "AI 4 Alzheimer's",
     "AI Engineer Roadmap",
     "Agent Architecture",
+    "Agent from scratch",
     "Articles",
     "Cost",
     "Gatech CS6457 - VGD",

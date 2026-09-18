@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T01:11:31.622536+00:00",
+  "generated_at": "2026-09-17T01:06:41.678222+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -1575,16 +1575,16 @@
       "slug": "armkhqt7dpl4g9ck",
       "title": "Agent from scratch",
       "url": "https://www.yuque.com/shakewin/xhs6fk/armkhqt7dpl4g9ck",
-      "content_updated_at": "2026-09-14T09:16:59.000Z",
-      "latest_version_id": 4047767972,
-      "last_ingested_version": 4047767972,
+      "content_updated_at": "2026-09-16T11:33:18.000Z",
+      "latest_version_id": 4051174561,
+      "last_ingested_version": 4051174561,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 2580,
-      "last_ingested_at": "2026-09-15T01:11:31.622494+00:00"
+      "last_ingested_at": "2026-09-17T01:06:41.678167+00:00"
     },
     {
       "source_id": "yuque:285017089",
