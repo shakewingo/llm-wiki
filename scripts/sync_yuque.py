@@ -87,6 +87,7 @@ EXCLUDED_TITLES = {
     "Mila",
     "My Game-Style Blog",
     "Paper to read",
+    "Python",
     "Practice on Kaggle",
     "Roadmap Progress Hint",
     "School AI Lab",
