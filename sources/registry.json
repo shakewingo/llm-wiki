@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-21T01:18:02.878550+00:00",
+  "generated_at": "2026-09-22T01:31:10.820140+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -992,16 +992,16 @@
       "slug": "vcfpoozzs1sq97f4",
       "title": "Python",
       "url": "https://www.yuque.com/shakewin/aqegd7/vcfpoozzs1sq97f4",
-      "content_updated_at": "2026-09-17T06:21:38.000Z",
-      "latest_version_id": 4052105723,
-      "last_ingested_version": 4052105723,
+      "content_updated_at": "2026-09-21T08:12:36.000Z",
+      "latest_version_id": 4057648049,
+      "last_ingested_version": 4057648049,
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 431,
-      "last_ingested_at": "2026-09-18T04:49:18.416043+00:00"
+      "last_ingested_at": "2026-09-22T01:31:05.919139+00:00"
     },
     {
       "source_id": "yuque:249024774",
@@ -1576,16 +1576,16 @@
       "slug": "armkhqt7dpl4g9ck",
       "title": "Agent from scratch",
       "url": "https://www.yuque.com/shakewin/xhs6fk/armkhqt7dpl4g9ck",
-      "content_updated_at": "2026-09-20T14:14:25.000Z",
-      "latest_version_id": 4056611684,
-      "last_ingested_version": 4056611684,
+      "content_updated_at": "2026-09-21T08:24:46.000Z",
+      "latest_version_id": 4057680215,
+      "last_ingested_version": 4057680215,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 2580,
-      "last_ingested_at": "2026-09-21T01:18:02.878512+00:00"
+      "last_ingested_at": "2026-09-22T01:31:10.820095+00:00"
     },
     {
       "source_id": "yuque:285017089",
