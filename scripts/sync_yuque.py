@@ -88,6 +88,7 @@ EXCLUDED_TITLES = {
     "My Game-Style Blog",
     "Paper to read",
     "Python",
+    "Recursive Self-Improvement (RSI)",
     "Practice on Kaggle",
     "Roadmap Progress Hint",
     "School AI Lab",
