@@ -278,6 +278,9 @@ def plan(write_report: bool) -> dict[str, Any]:
     for source_id, doc in sorted(live_by_id.items()):
         old = old_by_id.get(source_id)
         if old is None:
+            _scope, _reason = scope_for(doc)
+            if _scope == "excluded":
+                continue
             changes.append({"source_id": source_id, "change": "new", "title": doc["title"]})
             continue
         kinds = []
@@ -290,7 +293,7 @@ def plan(write_report: bool) -> dict[str, Any]:
             kinds.append("version-changed")
         if doc.get("content_updated_at") != old.get("content_updated_at"):
             kinds.append("content-changed")
-        if kinds:
+        if kinds and old.get("scope") != "excluded":
             changes.append(
                 {
                     "source_id": source_id,
@@ -302,7 +305,7 @@ def plan(write_report: bool) -> dict[str, Any]:
                 }
             )
     for source_id, old in sorted(old_by_id.items()):
-        if source_id not in live_by_id:
+        if source_id not in live_by_id and old.get("scope") != "excluded":
             changes.append(
                 {
                     "source_id": source_id,
