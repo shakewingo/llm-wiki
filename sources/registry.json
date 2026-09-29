@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T01:41:57.527213+00:00",
+  "generated_at": "2026-09-29T03:18:05.758093+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -752,24 +752,6 @@
       "public": false,
       "status": 1,
       "word_count": 4554
-    },
-    {
-      "source_id": "yuque:238632475",
-      "provider": "yuque",
-      "knowledge_base": "shakewin/xhs6fk",
-      "knowledge_base_name": "Project Notes",
-      "slug": "mahlahhn53d3s3ca",
-      "title": "MoneyInOne",
-      "url": "https://www.yuque.com/shakewin/xhs6fk/mahlahhn53d3s3ca",
-      "content_updated_at": "2025-10-30T11:42:55.000Z",
-      "latest_version_id": 3539040730,
-      "last_ingested_version": null,
-      "scope": "unreviewed",
-      "scope_reason": "Content must be reviewed before inclusion.",
-      "concepts": [],
-      "public": false,
-      "status": 1,
-      "word_count": 3482
     },
     {
       "source_id": "yuque:241262981",
@@ -1576,16 +1558,16 @@
       "slug": "armkhqt7dpl4g9ck",
       "title": "Agent from scratch",
       "url": "https://www.yuque.com/shakewin/xhs6fk/armkhqt7dpl4g9ck",
-      "content_updated_at": "2026-09-21T08:24:46.000Z",
-      "latest_version_id": 4057680215,
-      "last_ingested_version": 4057680215,
+      "content_updated_at": "2026-09-28T07:56:42.000Z",
+      "latest_version_id": 4064968930,
+      "last_ingested_version": 4064968930,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 2580,
-      "last_ingested_at": "2026-09-22T01:31:10.820095+00:00"
+      "last_ingested_at": "2026-09-29T03:15:29.447500+00:00"
     },
     {
       "source_id": "yuque:285017089",
@@ -1624,6 +1606,25 @@
       "status": 1,
       "word_count": 0,
       "last_ingested_at": "2026-09-25T01:41:57.527163+00:00"
+    },
+    {
+      "source_id": "yuque:286000095",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "enzhwl32t9wfe9ib",
+      "title": "Post-Training",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/enzhwl32t9wfe9ib",
+      "content_updated_at": "2026-09-21T12:32:22.000Z",
+      "latest_version_id": 4058085813,
+      "last_ingested_version": 4058085813,
+      "last_ingested_at": "2026-09-29T03:18:05.757998+00:00",
+      "scope": "unreviewed",
+      "scope_reason": "Content must be reviewed before inclusion.",
+      "concepts": [],
+      "public": false,
+      "status": 1,
+      "word_count": 1370
     }
   ]
 }
