@@ -800,6 +800,25 @@
       "path": "wiki/concepts/human-in-the-loop-agents.md"
     },
     {
+      "id": "jev",
+      "title": "Jev (TypeSafe Structured Decision Model)",
+      "type": "concept",
+      "domains": [
+        "agent-systems",
+        "ai-engineering",
+        "post-training"
+      ],
+      "aliases": [
+        "TypeSafe",
+        "RLCD model",
+        "structured decision model"
+      ],
+      "sources": [
+        "yuque:286521159"
+      ],
+      "path": "wiki/concepts/jev.md"
+    },
+    {
       "id": "knowledge-distillation",
       "title": "Knowledge Distillation",
       "type": "concept",
@@ -2235,6 +2254,11 @@
     },
     {
       "source": "direct-preference-optimization",
+      "target": "jev",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "direct-preference-optimization",
       "target": "proximal-policy-optimization",
       "type": "contrasts_with"
     },
@@ -2536,6 +2560,21 @@
     {
       "source": "human-in-the-loop-agents",
       "target": "agent-loop",
+      "type": "prerequisites"
+    },
+    {
+      "source": "jev",
+      "target": "direct-preference-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "jev",
+      "target": "tool-use-function-calling",
+      "type": "enables"
+    },
+    {
+      "source": "jev",
+      "target": "reward-modeling",
       "type": "prerequisites"
     },
     {

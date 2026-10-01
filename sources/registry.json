@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T01:05:58.776607+00:00",
+  "generated_at": "2026-10-01T02:53:44.841336+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -1637,13 +1637,15 @@
       "content_updated_at": "2026-09-30T08:39:22.000Z",
       "latest_version_id": 4067476143,
       "last_ingested_version": 4067476143,
-      "scope": "unreviewed",
-      "scope_reason": "Content must be reviewed before inclusion.",
-      "concepts": [],
+      "scope": "core",
+      "scope_reason": "Direct AI/LLM concept material: structured decision model based on RLCD, relevant to agent systems and post-training.",
+      "concepts": [
+        "jev"
+      ],
       "public": true,
       "status": 1,
       "word_count": 506,
-      "last_ingested_at": "2026-10-01T01:05:58.776554+00:00"
+      "last_ingested_at": "2026-10-01T02:53:44.841304+00:00"
     }
   ]
 }

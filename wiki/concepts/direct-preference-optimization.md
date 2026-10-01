@@ -7,7 +7,7 @@ aliases: [DPO]
 level: intermediate
 relations:
   prerequisites: [supervised-fine-tuning, probabilistic-objectives]
-  contrasts_with: [reward-modeling, proximal-policy-optimization, rlhf, group-relative-policy-optimization]
+  contrasts_with: [reward-modeling, proximal-policy-optimization, rlhf, group-relative-policy-optimization, jev]
 sources: [yuque:249024774, yuque:168068842, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
@@ -32,6 +32,6 @@ reference choice, and sensitivity to the temperature-like $\beta$ parameter.
 ## Obsidian relationships
 
 - Prerequisites: [[supervised-fine-tuning|Supervised Fine-Tuning]], [[probabilistic-objectives|Probabilistic Objectives]]
-- Contrasts with: [[reward-modeling|Reward Modeling]], [[proximal-policy-optimization|Proximal Policy Optimization]], [[rlhf|Reinforcement Learning from Human Feedback]], [[group-relative-policy-optimization|Group Relative Policy Optimization]]
+- Contrasts with: [[reward-modeling|Reward Modeling]], [[proximal-policy-optimization|Proximal Policy Optimization]], [[rlhf|Reinforcement Learning from Human Feedback]], [[group-relative-policy-optimization|Group Relative Policy Optimization]], [[jev|Jev (TypeSafe Structured Decision Model)]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->
