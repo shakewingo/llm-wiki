@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T03:18:05.758093+00:00",
+  "generated_at": "2026-10-01T01:05:58.776607+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -1558,16 +1558,16 @@
       "slug": "armkhqt7dpl4g9ck",
       "title": "Agent from scratch",
       "url": "https://www.yuque.com/shakewin/xhs6fk/armkhqt7dpl4g9ck",
-      "content_updated_at": "2026-09-28T07:56:42.000Z",
-      "latest_version_id": 4064968930,
-      "last_ingested_version": 4064968930,
+      "content_updated_at": "2026-09-29T15:13:00.000Z",
+      "latest_version_id": 4067325705,
+      "last_ingested_version": 4067325705,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 2580,
-      "last_ingested_at": "2026-09-29T03:15:29.447500+00:00"
+      "last_ingested_at": "2026-10-01T01:03:36.890472+00:00"
     },
     {
       "source_id": "yuque:285017089",
@@ -1615,16 +1615,35 @@
       "slug": "enzhwl32t9wfe9ib",
       "title": "Post-Training",
       "url": "https://www.yuque.com/shakewin/xhs6fk/enzhwl32t9wfe9ib",
-      "content_updated_at": "2026-09-21T12:32:22.000Z",
-      "latest_version_id": 4058085813,
-      "last_ingested_version": 4058085813,
-      "last_ingested_at": "2026-09-29T03:18:05.757998+00:00",
+      "content_updated_at": "2026-09-29T15:15:32.000Z",
+      "latest_version_id": 4067325638,
+      "last_ingested_version": 4067325638,
+      "last_ingested_at": "2026-10-01T01:03:40.456922+00:00",
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 1370
+    },
+    {
+      "source_id": "yuque:286521159",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/woezs0",
+      "knowledge_base_name": "Algorithm",
+      "slug": "snznodh9vqk5xvyg",
+      "title": "Jev",
+      "url": "https://www.yuque.com/shakewin/woezs0/snznodh9vqk5xvyg",
+      "content_updated_at": "2026-09-30T08:39:22.000Z",
+      "latest_version_id": 4067476143,
+      "last_ingested_version": 4067476143,
+      "scope": "unreviewed",
+      "scope_reason": "Content must be reviewed before inclusion.",
+      "concepts": [],
+      "public": true,
+      "status": 1,
+      "word_count": 506,
+      "last_ingested_at": "2026-10-01T01:05:58.776554+00:00"
     }
   ]
 }
