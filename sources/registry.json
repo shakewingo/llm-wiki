@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T02:53:44.841336+00:00",
+  "generated_at": "2026-10-04T02:12:33.529134+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -1634,9 +1634,9 @@
       "slug": "snznodh9vqk5xvyg",
       "title": "Jev",
       "url": "https://www.yuque.com/shakewin/woezs0/snznodh9vqk5xvyg",
-      "content_updated_at": "2026-09-30T08:39:22.000Z",
-      "latest_version_id": 4067476143,
-      "last_ingested_version": 4067476143,
+      "content_updated_at": "2026-10-02T12:55:52.000Z",
+      "latest_version_id": 4068668539,
+      "last_ingested_version": 4068668539,
       "scope": "core",
       "scope_reason": "Direct AI/LLM concept material: structured decision model based on RLCD, relevant to agent systems and post-training.",
       "concepts": [
@@ -1645,7 +1645,7 @@
       "public": true,
       "status": 1,
       "word_count": 506,
-      "last_ingested_at": "2026-10-01T02:53:44.841304+00:00"
+      "last_ingested_at": "2026-10-04T02:12:33.529088+00:00"
     }
   ]
 }
