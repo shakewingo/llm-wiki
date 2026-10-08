@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-04T02:12:33.529134+00:00",
+  "generated_at": "2026-10-07T01:36:31.901904+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -1615,10 +1615,10 @@
       "slug": "enzhwl32t9wfe9ib",
       "title": "Post-Training",
       "url": "https://www.yuque.com/shakewin/xhs6fk/enzhwl32t9wfe9ib",
-      "content_updated_at": "2026-09-29T15:15:32.000Z",
-      "latest_version_id": 4067325638,
-      "last_ingested_version": 4067325638,
-      "last_ingested_at": "2026-10-01T01:03:40.456922+00:00",
+      "content_updated_at": "2026-10-06T14:37:35.000Z",
+      "latest_version_id": 4070844881,
+      "last_ingested_version": 4070844881,
+      "last_ingested_at": "2026-10-07T01:36:31.901867+00:00",
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
@@ -1634,9 +1634,9 @@
       "slug": "snznodh9vqk5xvyg",
       "title": "Jev",
       "url": "https://www.yuque.com/shakewin/woezs0/snznodh9vqk5xvyg",
-      "content_updated_at": "2026-10-02T12:55:52.000Z",
-      "latest_version_id": 4068668539,
-      "last_ingested_version": 4068668539,
+      "content_updated_at": "2026-10-05T11:30:21.000Z",
+      "latest_version_id": 4070138890,
+      "last_ingested_version": 4070138890,
       "scope": "core",
       "scope_reason": "Direct AI/LLM concept material: structured decision model based on RLCD, relevant to agent systems and post-training.",
       "concepts": [
@@ -1645,7 +1645,7 @@
       "public": true,
       "status": 1,
       "word_count": 506,
-      "last_ingested_at": "2026-10-04T02:12:33.529088+00:00"
+      "last_ingested_at": "2026-10-07T01:36:27.805922+00:00"
     }
   ]
 }
