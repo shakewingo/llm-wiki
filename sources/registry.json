@@ -1619,17 +1619,9 @@
       "latest_version_id": 4074581376,
       "last_ingested_version": 4074581376,
       "last_ingested_at": "2026-10-10T01:10:30.284698+00:00",
-      "scope": "included",
-      "scope_reason": "Reviewed and synthesized into wiki/concepts/post-training.md",
-      "concepts": [
-        "post-training",
-        "supervised-fine-tuning",
-        "direct-preference-optimization",
-        "group-relative-policy-optimization",
-        "rlhf",
-        "knowledge-distillation",
-        "recursive-self-improvement"
-      ],
+      "scope": "unreviewed",
+      "scope_reason": "Content must be reviewed before inclusion.",
+      "concepts": [],
       "public": false,
       "status": 1,
       "word_count": 1370
