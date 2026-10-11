@@ -6,6 +6,7 @@ domains: [post-training, alignment, reasoning]
 aliases: []
 level: mixed
 entry_points:
+  - post-training
   - pretraining
   - supervised-fine-tuning
   - reward-modeling
@@ -26,6 +27,8 @@ sources: [yuque:168068842, yuque:249024774, yuque:241299652, yuque:245719568, yu
 # Post-Training and Alignment Map
 
 Post-training transforms a broad next-token model into a useful policy.
+See the [post-training overview](../concepts/post-training.md) for the full
+pipeline including agent-specific considerations and RSI.
 
 The typical path is [pretraining](../concepts/pretraining.md) →
 [SFT](../concepts/supervised-fine-tuning.md) → preference or reinforcement learning.

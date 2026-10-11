@@ -8,6 +8,7 @@ level: foundational
 relations:
   prerequisites: [transformer-architecture, probabilistic-objectives]
   enables: [supervised-fine-tuning]
+  contrasts_with: [post-training]
 sources: [yuque:145104021, yuque:253935769, yuque:247276544]
 ---
 
@@ -39,5 +40,6 @@ stable optimization—not merely collecting more text.”
 
 - Prerequisites: [[transformer-architecture|Transformer Architecture]], [[probabilistic-objectives|Probabilistic Objectives]]
 - Enables: [[supervised-fine-tuning|Supervised Fine-Tuning]]
+- Contrasts with: [[post-training|Post-Training]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->

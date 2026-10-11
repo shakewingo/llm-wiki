@@ -1258,6 +1258,24 @@
       "path": "wiki/concepts/policy-gradient.md"
     },
     {
+      "id": "post-training",
+      "title": "Post-Training",
+      "type": "concept",
+      "domains": [
+        "post-training",
+        "alignment",
+        "agent-engineering"
+      ],
+      "aliases": [
+        "post-training pipeline",
+        "agent post-training"
+      ],
+      "sources": [
+        "yuque:286000095"
+      ],
+      "path": "wiki/concepts/post-training.md"
+    },
+    {
       "id": "post-training-and-alignment",
       "title": "Post-Training and Alignment Map",
       "type": "map",
@@ -2943,6 +2961,41 @@
       "type": "prerequisites"
     },
     {
+      "source": "post-training",
+      "target": "pretraining",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "post-training",
+      "target": "direct-preference-optimization",
+      "type": "enables"
+    },
+    {
+      "source": "post-training",
+      "target": "group-relative-policy-optimization",
+      "type": "enables"
+    },
+    {
+      "source": "post-training",
+      "target": "knowledge-distillation",
+      "type": "enables"
+    },
+    {
+      "source": "post-training",
+      "target": "rlhf",
+      "type": "enables"
+    },
+    {
+      "source": "post-training",
+      "target": "pretraining",
+      "type": "prerequisites"
+    },
+    {
+      "source": "post-training",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
       "source": "post-training-and-alignment",
       "target": "foundations",
       "type": "prerequisites"
@@ -2956,6 +3009,11 @@
       "source": "post-training-drills",
       "target": "post-training-and-alignment",
       "type": "prerequisites"
+    },
+    {
+      "source": "pretraining",
+      "target": "post-training",
+      "type": "contrasts_with"
     },
     {
       "source": "pretraining",
