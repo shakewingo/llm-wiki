@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10T01:10:30.284739+00:00",
+  "generated_at": "2026-10-28T03:05:19.031675+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -84,7 +84,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 1701
     },
@@ -108,7 +108,7 @@
         "foundations-drills",
         "time-series-anomaly-detection"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 1172
     },
@@ -126,7 +126,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 0
     },
@@ -144,7 +144,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 0
     },
@@ -168,7 +168,7 @@
         "vae-lof-anomaly-detection",
         "variational-autoencoder"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 238
     },
@@ -191,7 +191,7 @@
         "spectral-residual-cnn",
         "time-series-anomaly-detection"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 399
     },
@@ -209,7 +209,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 0
     },
@@ -232,7 +232,7 @@
         "model-architecture-and-generation",
         "model-architecture-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 151
     },
@@ -257,7 +257,7 @@
         "transformer-architecture",
         "transformer-inference"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 1425
     },
@@ -288,7 +288,7 @@
         "transformer-inference",
         "transformer-inference-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 491
     },
@@ -312,7 +312,7 @@
         "model-architecture-drills",
         "variational-autoencoder"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 343
     },
@@ -330,7 +330,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 2
     },
@@ -354,7 +354,7 @@
         "sentence-embeddings",
         "vector-database"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 199
     },
@@ -385,7 +385,7 @@
         "supervised-fine-tuning",
         "temporal-difference-learning"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 843
     },
@@ -397,15 +397,15 @@
       "slug": "mhg8hysmumw5qrft",
       "title": "Mixed",
       "url": "https://www.yuque.com/shakewin/aqegd7/mhg8hysmumw5qrft",
-      "content_updated_at": "2026-09-02T08:38:56.000Z",
-      "latest_version_id": 4031653445,
-      "last_ingested_version": null,
+      "content_updated_at": "2026-10-20T08:35:30.000Z",
+      "latest_version_id": 4089398194,
+      "last_ingested_version": 4089398194,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 1265
+      "word_count": 1427
     },
     {
       "source_id": "yuque:171171119",
@@ -447,7 +447,7 @@
         "pc-algorithm",
         "root-cause-analysis"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 2576
     },
@@ -512,7 +512,7 @@
         "foundations-drills",
         "search-and-a-star"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 521
     },
@@ -537,7 +537,7 @@
         "model-architecture-and-generation",
         "residual-network"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 745
     },
@@ -645,7 +645,7 @@
         "recurrent-neural-network",
         "residual-network"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 4635
     },
@@ -673,7 +673,7 @@
         "reinforcement-learning",
         "temporal-difference-learning"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 3441
     },
@@ -731,7 +731,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 185
     },
@@ -749,7 +749,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 4554
     },
@@ -814,7 +814,7 @@
         "supervised-fine-tuning",
         "transformer-inference"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 2323
     },
@@ -886,7 +886,7 @@
         "post-training-drills",
         "probabilistic-objectives"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 2158
     },
@@ -982,8 +982,7 @@
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 431,
-      "last_ingested_at": "2026-09-22T01:31:05.919139+00:00"
+      "word_count": 585
     },
     {
       "source_id": "yuque:249024774",
@@ -1005,7 +1004,7 @@
         "post-training-drills",
         "reward-modeling"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 277
     },
@@ -1041,7 +1040,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 12
     },
@@ -1062,24 +1061,6 @@
       "public": false,
       "status": 1,
       "word_count": 5200
-    },
-    {
-      "source_id": "yuque:250038294",
-      "provider": "yuque",
-      "knowledge_base": "shakewin/xhs6fk",
-      "knowledge_base_name": "Project Notes",
-      "slug": "thx1f7tw2bb6blmv",
-      "title": "My Game-Style Blog",
-      "url": "https://www.yuque.com/shakewin/xhs6fk/thx1f7tw2bb6blmv",
-      "content_updated_at": "2025-12-23T17:02:52.000Z",
-      "latest_version_id": 3637903666,
-      "last_ingested_version": null,
-      "scope": "excluded",
-      "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
-      "concepts": [],
-      "public": false,
-      "status": 1,
-      "word_count": 43
     },
     {
       "source_id": "yuque:250119267",
@@ -1113,7 +1094,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 0,
       "word_count": 0
     },
@@ -1149,7 +1130,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 0
     },
@@ -1180,7 +1161,7 @@
         "supervised-fine-tuning",
         "vector-database"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 193
     },
@@ -1204,7 +1185,7 @@
         "pipeline-parallelism",
         "residual-network"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 165
     },
@@ -1226,7 +1207,7 @@
         "model-architecture-and-generation",
         "model-architecture-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 424
     },
@@ -1236,11 +1217,11 @@
       "knowledge_base": "shakewin/xhs6fk",
       "knowledge_base_name": "Project Notes",
       "slug": "ks4me3zlgov4ma8g",
-      "title": "Openclaw/Nanobot",
+      "title": "Openclaw/ Nanobot /Hermes",
       "url": "https://www.yuque.com/shakewin/xhs6fk/ks4me3zlgov4ma8g",
-      "content_updated_at": "2026-03-28T08:04:22.000Z",
-      "latest_version_id": 3791244293,
-      "last_ingested_version": 3791244293,
+      "content_updated_at": "2026-10-22T07:48:26.000Z",
+      "latest_version_id": 4091348125,
+      "last_ingested_version": 4091348125,
       "scope": "project-evidence",
       "scope_reason": "Implementation evidence; provisional pending user review.",
       "concepts": [
@@ -1300,7 +1281,7 @@
         "transformer-inference",
         "transformer-inference-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 818
     },
@@ -1323,7 +1304,7 @@
         "transformer-inference",
         "transformer-inference-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 1094
     },
@@ -1349,7 +1330,7 @@
         "transformer-inference",
         "transformer-inference-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 1089
     },
@@ -1367,7 +1348,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 0,
       "word_count": 0
     },
@@ -1385,7 +1366,7 @@
       "scope": "reference",
       "scope_reason": "Reviewed curriculum or implementation reference used by the comprehensive migration.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 652
     },
@@ -1403,7 +1384,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 0,
       "word_count": 0
     },
@@ -1450,7 +1431,7 @@
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
-      "public": false,
+      "public": true,
       "status": 0,
       "word_count": 0
     },
@@ -1476,7 +1457,7 @@
         "transformer-inference",
         "transformer-inference-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 992
     },
@@ -1528,7 +1509,7 @@
         "transformer-inference",
         "transformer-inference-drills"
       ],
-      "public": false,
+      "public": true,
       "status": 1,
       "word_count": 1170
     },
@@ -1558,16 +1539,15 @@
       "slug": "armkhqt7dpl4g9ck",
       "title": "Agent from scratch",
       "url": "https://www.yuque.com/shakewin/xhs6fk/armkhqt7dpl4g9ck",
-      "content_updated_at": "2026-09-29T15:13:00.000Z",
-      "latest_version_id": 4067325705,
-      "last_ingested_version": 4067325705,
+      "content_updated_at": "2026-10-19T14:57:28.000Z",
+      "latest_version_id": 4087474041,
+      "last_ingested_version": 4087474041,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 2580,
-      "last_ingested_at": "2026-10-01T01:03:36.890472+00:00"
+      "word_count": 6401
     },
     {
       "source_id": "yuque:285017089",
@@ -1585,8 +1565,7 @@
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 4304,
-      "last_ingested_at": "2026-09-15T01:11:31.622531+00:00"
+      "word_count": 4304
     },
     {
       "source_id": "yuque:285020362",
@@ -1594,18 +1573,17 @@
       "knowledge_base": "shakewin/xhs6fk",
       "knowledge_base_name": "Project Notes",
       "slug": "bug51rs5cgnso4u6",
-      "title": "Agent Arch Comparison",
+      "title": "All Agentic Arch Book",
       "url": "https://www.yuque.com/shakewin/xhs6fk/bug51rs5cgnso4u6",
-      "content_updated_at": "2026-09-22T05:15:59.000Z",
-      "latest_version_id": 4058808486,
+      "content_updated_at": "2026-09-30T06:53:05.000Z",
+      "latest_version_id": 4067325743,
       "last_ingested_version": 4058808486,
       "scope": "excluded",
       "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
       "concepts": [],
       "public": false,
       "status": 1,
-      "word_count": 0,
-      "last_ingested_at": "2026-09-25T01:41:57.527163+00:00"
+      "word_count": 1760
     },
     {
       "source_id": "yuque:286000095",
@@ -1615,16 +1593,17 @@
       "slug": "enzhwl32t9wfe9ib",
       "title": "Post-Training",
       "url": "https://www.yuque.com/shakewin/xhs6fk/enzhwl32t9wfe9ib",
-      "content_updated_at": "2026-10-09T16:52:31.000Z",
-      "latest_version_id": 4074581376,
-      "last_ingested_version": 4074581376,
-      "last_ingested_at": "2026-10-10T01:10:30.284698+00:00",
+      "content_updated_at": "2026-10-20T13:00:11.000Z",
+      "latest_version_id": 4088861521,
+      "last_ingested_version": 4088861521,
       "scope": "unreviewed",
       "scope_reason": "Content must be reviewed before inclusion.",
-      "concepts": [],
+      "concepts": [
+        "post-training"
+      ],
       "public": false,
       "status": 1,
-      "word_count": 1370
+      "word_count": 6499
     },
     {
       "source_id": "yuque:286521159",
@@ -1644,8 +1623,64 @@
       ],
       "public": true,
       "status": 1,
-      "word_count": 506,
-      "last_ingested_at": "2026-10-07T01:36:27.805922+00:00"
+      "word_count": 915
+    },
+    {
+      "source_id": "yuque:288964571",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "owmvngalyva33nlr",
+      "title": "RSI",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/owmvngalyva33nlr",
+      "content_updated_at": "2026-10-21T09:00:13.000Z",
+      "latest_version_id": 4090040679,
+      "last_ingested_version": 4090040679,
+      "scope": "core",
+      "scope_reason": "Core AI/LLM concept: Recursive Self-Improvement",
+      "concepts": [
+        "recursive-self-improvement"
+      ],
+      "public": false,
+      "status": 1,
+      "word_count": 7482,
+      "last_ingested_at": "2026-10-28T03:05:19.031640+00:00"
+    },
+    {
+      "source_id": "yuque:289162809",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "hklryb44d1cmgznq",
+      "title": "Deepseek harness / Google harness2 / Hermes agent / Openclaw / Nanobot",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/hklryb44d1cmgznq",
+      "content_updated_at": "2026-10-22T02:52:24.000Z",
+      "latest_version_id": null,
+      "last_ingested_version": null,
+      "scope": "excluded",
+      "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
+      "concepts": [],
+      "public": false,
+      "status": 0,
+      "word_count": 0
+    },
+    {
+      "source_id": "yuque:289193983",
+      "provider": "yuque",
+      "knowledge_base": "shakewin/xhs6fk",
+      "knowledge_base_name": "Project Notes",
+      "slug": "hhnio1ygbtxyr0mp",
+      "title": "Hermes",
+      "url": "https://www.yuque.com/shakewin/xhs6fk/hhnio1ygbtxyr0mp",
+      "content_updated_at": "2026-10-22T07:48:29.000Z",
+      "latest_version_id": null,
+      "last_ingested_version": null,
+      "scope": "excluded",
+      "scope_reason": "Empty, personal, administrative, or out of pilot scope.",
+      "concepts": [],
+      "public": false,
+      "status": 0,
+      "word_count": 0
     }
   ]
 }

@@ -7,7 +7,7 @@ aliases: [GRPO]
 level: advanced
 relations:
   prerequisites: [policy-gradient, reward-modeling]
-  contrasts_with: [proximal-policy-optimization, rlhf, direct-preference-optimization]
+  contrasts_with: [proximal-policy-optimization, rlhf, direct-preference-optimization, recursive-self-improvement]
 sources: [yuque:241299652, yuque:245719568, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 legacy_notion_id: 965cad4f-b605-8220-bb2e-81cb441e982f
 ---
@@ -33,6 +33,6 @@ incorrectly. GRPO reduces model count, not the cost of generating multiple rollo
 ## Obsidian relationships
 
 - Prerequisites: [[policy-gradient|Policy Gradient]], [[reward-modeling|Reward Modeling]]
-- Contrasts with: [[proximal-policy-optimization|Proximal Policy Optimization]], [[rlhf|Reinforcement Learning from Human Feedback]], [[direct-preference-optimization|Direct Preference Optimization]]
+- Contrasts with: [[proximal-policy-optimization|Proximal Policy Optimization]], [[rlhf|Reinforcement Learning from Human Feedback]], [[direct-preference-optimization|Direct Preference Optimization]], [[recursive-self-improvement|Recursive Self-Improvement]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->

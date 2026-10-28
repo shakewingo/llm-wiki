@@ -7,7 +7,7 @@ aliases: [RLHF]
 level: intermediate
 relations:
   prerequisites: [supervised-fine-tuning, reward-modeling, proximal-policy-optimization]
-  contrasts_with: [direct-preference-optimization, group-relative-policy-optimization]
+  contrasts_with: [direct-preference-optimization, group-relative-policy-optimization, recursive-self-improvement]
 sources: [yuque:168068842, yuque:241299652, notion:388cad4f-b605-8074-8c53-ff558a15beb0]
 ---
 
@@ -33,6 +33,6 @@ alongside human quality.
 ## Obsidian relationships
 
 - Prerequisites: [[supervised-fine-tuning|Supervised Fine-Tuning]], [[reward-modeling|Reward Modeling]], [[proximal-policy-optimization|Proximal Policy Optimization]]
-- Contrasts with: [[direct-preference-optimization|Direct Preference Optimization]], [[group-relative-policy-optimization|Group Relative Policy Optimization]]
+- Contrasts with: [[direct-preference-optimization|Direct Preference Optimization]], [[group-relative-policy-optimization|Group Relative Policy Optimization]], [[recursive-self-improvement|Recursive Self-Improvement]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->

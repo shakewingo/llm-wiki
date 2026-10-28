@@ -7,7 +7,7 @@ aliases: [post-training pipeline, agent post-training]
 level: intermediate
 relations:
   prerequisites: [pretraining, supervised-fine-tuning]
-  enables: [rlhf, direct-preference-optimization, group-relative-policy-optimization, knowledge-distillation]
+  enables: [rlhf, direct-preference-optimization, group-relative-policy-optimization, knowledge-distillation, recursive-self-improvement]
   contrasts_with: [pretraining]
 sources: [yuque:286000095]
 ---
@@ -119,7 +119,7 @@ scope, keep/discard, experiment log, time budget.
 ## Obsidian relationships
 
 - Prerequisites: [[pretraining|Language-Model Pretraining]], [[supervised-fine-tuning|Supervised Fine-Tuning]]
-- Enables: [[rlhf|Reinforcement Learning from Human Feedback]], [[direct-preference-optimization|Direct Preference Optimization]], [[group-relative-policy-optimization|Group Relative Policy Optimization]], [[knowledge-distillation|Knowledge Distillation]]
+- Enables: [[rlhf|Reinforcement Learning from Human Feedback]], [[direct-preference-optimization|Direct Preference Optimization]], [[group-relative-policy-optimization|Group Relative Policy Optimization]], [[knowledge-distillation|Knowledge Distillation]], [[recursive-self-improvement|Recursive Self-Improvement]]
 - Contrasts with: [[pretraining|Language-Model Pretraining]]
 
 <!-- END GENERATED OBSIDIAN LINKS -->

@@ -1422,6 +1422,22 @@
       "path": "wiki/concepts/recurrent-neural-network.md"
     },
     {
+      "id": "recursive-self-improvement",
+      "title": "Recursive Self-Improvement",
+      "type": "concept",
+      "domains": [
+        "post-training",
+        "agent-architecture"
+      ],
+      "aliases": [
+        "RSI"
+      ],
+      "sources": [
+        "yuque:288964571"
+      ],
+      "path": "wiki/concepts/recursive-self-improvement.md"
+    },
+    {
       "id": "reinforcement-learning",
       "title": "Reinforcement Learning",
       "type": "concept",
@@ -2282,6 +2298,11 @@
     },
     {
       "source": "direct-preference-optimization",
+      "target": "recursive-self-improvement",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "direct-preference-optimization",
       "target": "reward-modeling",
       "type": "contrasts_with"
     },
@@ -2528,6 +2549,11 @@
     {
       "source": "group-relative-policy-optimization",
       "target": "proximal-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "group-relative-policy-optimization",
+      "target": "recursive-self-improvement",
       "type": "contrasts_with"
     },
     {
@@ -3121,6 +3147,36 @@
       "type": "prerequisites"
     },
     {
+      "source": "recursive-self-improvement",
+      "target": "direct-preference-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "recursive-self-improvement",
+      "target": "group-relative-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "recursive-self-improvement",
+      "target": "rlhf",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "recursive-self-improvement",
+      "target": "agent-loop",
+      "type": "prerequisites"
+    },
+    {
+      "source": "recursive-self-improvement",
+      "target": "reinforcement-learning",
+      "type": "prerequisites"
+    },
+    {
+      "source": "recursive-self-improvement",
+      "target": "supervised-fine-tuning",
+      "type": "prerequisites"
+    },
+    {
       "source": "reinforcement-learning",
       "target": "policy-gradient",
       "type": "enables"
@@ -3228,6 +3284,11 @@
     {
       "source": "rlhf",
       "target": "group-relative-policy-optimization",
+      "type": "contrasts_with"
+    },
+    {
+      "source": "rlhf",
+      "target": "recursive-self-improvement",
       "type": "contrasts_with"
     },
     {
