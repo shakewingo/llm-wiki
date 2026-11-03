@@ -3008,6 +3008,11 @@
     },
     {
       "source": "post-training",
+      "target": "recursive-self-improvement",
+      "type": "enables"
+    },
+    {
+      "source": "post-training",
       "target": "rlhf",
       "type": "enables"
     },

@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
+import re
 import sys
 import tempfile
 import time
@@ -23,6 +25,10 @@ API = "https://api.notion.com/v1"
 API_VERSION = "2026-03-11"
 REGISTRY = ROOT / "sources" / "registry.json"
 REPORT = ROOT / "generated" / "reports" / "notion-sync-plan.json"
+
+# Notion markdown embeds signed S3 URLs whose query strings change on every
+# fetch. Strip them before hashing so the body hash stays stable.
+URL_QUERY = re.compile(r'(https?://[^\s\)\]>"]+?)\?[^\s\)\]>"]*')
 
 
 def now() -> str:
@@ -102,6 +108,17 @@ def fetch_markdown_parts(page_id: str) -> list[dict[str, Any]]:
     return parts
 
 
+def normalize_markdown(markdown: str) -> str:
+    return URL_QUERY.sub(r"\1", markdown)
+
+
+def content_hash(source_id: str) -> str:
+    """Hash the page body only, ignoring volatile signed URLs."""
+    parts = fetch_markdown_parts(page_id_for(source_id))
+    body = "\n".join(normalize_markdown(part.get("markdown", "")) for part in parts)
+    return hashlib.sha256(body.encode("utf-8")).hexdigest()
+
+
 def read_registry() -> dict[str, Any]:
     return json.loads(REGISTRY.read_text())
 
@@ -142,8 +159,23 @@ def plan(write_report: bool) -> dict[str, Any]:
         live_version = page.get("last_edited_time")
         if live_title and live_title != record.get("title"):
             kinds.append("renamed")
-        if live_version != record.get("last_ingested_version"):
-            kinds.append("content-changed")
+        try:
+            live_hash = content_hash(source_id)
+        except urllib.error.HTTPError as exc:
+            if exc.code not in {403, 404}:
+                raise
+            live_hash = None
+        stored_hash = record.get("content_hash")
+        if live_hash is not None:
+            if stored_hash:
+                # Body hash is authoritative: property-only edits (tags,
+                # status, doc type) bump last_edited_time but not the body.
+                if live_hash != stored_hash:
+                    kinds.append("content-changed")
+            elif live_version != record.get("last_ingested_version"):
+                # Legacy record without a stored hash: fall back to the
+                # timestamp comparison until the next acknowledge.
+                kinds.append("content-changed")
         if kinds:
             changes.append(
                 {
@@ -152,6 +184,7 @@ def plan(write_report: bool) -> dict[str, Any]:
                     "scope": record.get("scope"),
                     "title": live_title or record.get("title"),
                     "latest_version_id": live_version,
+                    "content_hash": live_hash,
                     "affected_pages": record.get("concepts", []),
                 }
             )
@@ -222,6 +255,7 @@ def acknowledge(source_ids: list[str]) -> None:
         record["content_updated_at"] = version
         record["latest_version_id"] = version
         record["last_ingested_version"] = version
+        record["content_hash"] = content_hash(record["source_id"])
         record["last_ingested_at"] = now()
         record["api_version"] = API_VERSION
     registry["generated_at"] = now()
