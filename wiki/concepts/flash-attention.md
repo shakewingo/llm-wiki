@@ -22,7 +22,9 @@ Each query tile streams through key/value tiles while maintaining a running maxi
 softmax denominator, and weighted value accumulator. When a later tile contains a
 larger maximum, previous partial sums are rescaled. This online-softmax invariant
 produces the same mathematical result as dense attention without storing the full
-$N\times N$ matrix.
+$N\times N$ matrix. Because each (batch, head) pair is independent, the tiling
+parallelizes across `batch × heads` workers over `m × head_dim` tiles of Q, K, and V,
+and causal masking is fused into the kernel rather than materialized as a mask matrix.
 
 It reduces attention activation memory from quadratic to linear in sequence length
 and improves speed by reducing memory traffic. It does not change dense attention's

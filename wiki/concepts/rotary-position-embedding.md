@@ -36,6 +36,18 @@ angles the model never saw — hence interpolation and schemes such as YaRN that
 selected frequency bands. Implementations never build the block-diagonal rotation
 matrix; they do element-wise `cos`/`sin` multiplications, equivalent to multiplying
 each dimension pair by `e^{iθ}`.
+
+The lowest-frequency pairs are also where RoPE leaks absolute position. A high-dimension
+pair rotates so slowly that it completes only a fraction of a circle within any realistic
+context, so its value stays effectively unique and the model can use it as an implicit
+absolute-position marker. Two consequences follow. Attention ends up keyed partly to
+absolute rather than relative position, which is not what the construction promises. And
+when the inference context greatly exceeds the trained one (4k trained versus 100k
+inferred), those bands reach angles never seen during training, push the representation
+out of distribution, and perplexity explodes. YaRN handles this band by band: leave
+low-dimension high-frequency angles untouched, divide high-dimension low-frequency angles
+by a scale factor `s`, and linearly interpolate the intermediate bands so no band lands
+in unseen territory.
 In ordinary attention, cached keys
 already contain their positional rotation. In MLA, position handling must be split
 carefully: mixing RoPE into the compressed latent can prevent the weight-absorption

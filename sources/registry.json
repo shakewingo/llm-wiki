@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-08T01:06:23.925493+00:00",
+  "generated_at": "2026-11-11T01:15:12.681274+00:00",
   "scope_review": "provisional",
   "sources": [
     {
@@ -11,10 +11,10 @@
       "slug": "alisa-s-book-of-llms",
       "title": "Alisa’s book of LLMs",
       "url": "https://app.notion.com/p/388cad4fb60580748c53ff558a15beb0",
-      "content_updated_at": "2026-11-07T15:07:00.000Z",
-      "latest_version_id": "2026-11-07T15:07:00.000Z",
-      "last_ingested_version": "2026-11-07T15:07:00.000Z",
-      "last_ingested_at": "2026-11-08T01:06:23.925461+00:00",
+      "content_updated_at": "2026-11-08T13:22:00.000Z",
+      "latest_version_id": "2026-11-08T13:22:00.000Z",
+      "last_ingested_version": "2026-11-08T13:22:00.000Z",
+      "last_ingested_at": "2026-11-11T01:15:12.681238+00:00",
       "scope": "reference",
       "scope_reason": "Reviewed comprehensive LLM reference; used to fill verified gaps and reinforce existing concepts.",
       "concepts": [
@@ -69,7 +69,7 @@
       "status": "live",
       "word_count": 22764,
       "api_version": "2026-03-11",
-      "content_hash": "97f85af97d262ad21bf6f8cdf10b53146d43d7e93cb212b9e74b13946cca627d"
+      "content_hash": "7927012f0375090e02ed8d2b2186890751a946941ffda4e82f6eb119d27c2e64"
     },
     {
       "source_id": "yuque:127049298",
